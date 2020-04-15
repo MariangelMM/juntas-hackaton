@@ -1,17 +1,23 @@
 import React from 'react';
 
-const BanksItems = () => {
-    
+const BanksItems = (props) => {
+
+
+
+  console.log(props.month);
+
+  const { name, tcea } = props.getsBanks;
+
   return (
     <tr>
-        <td>img</td>
-        <td>months</td>
-        <td>tcea</td>
-        <td>totalCount</td>
-        <td>
-            <button>Solicitar</button>
-            <button >Mas Informacion</button>
-        </td>
+      <td>{name}</td>
+      <td>{props.month}</td>
+      <td>{tcea}</td>
+      <td>totalCount</td>
+      <td>
+        <button>Solicitar</button>
+        <button >Mas Informacion</button>
+      </td>
     </tr>
   );
 }
