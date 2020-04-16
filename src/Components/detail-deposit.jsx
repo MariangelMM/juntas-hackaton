@@ -26,9 +26,6 @@ const DetailDeposit = () => {
         return msgError;
     }
 
-
-
-
     return (
         <div>
             <h3>¡Ya estas por terminar!</h3>

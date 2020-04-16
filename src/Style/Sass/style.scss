@@ -1,2 +1,39 @@
 @import "./home.scss";
 @import "./variables";
+@import "./loan";
+@import "./mixins";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.font {
+  @include font;
+}
+.btn-pink {
+  @include btnpink;
+}
+
+.btn-pink-link {
+  @include btnpinklink;
+}
+
+.btn-yellow {
+  @include btnyellow;
+}
+
+.input {
+  @include input;
+}
+
+.row-yellow {
+  @include rowyellow;
+}
+
+.ml-1000 {
+  @include alignleft(70%);
+}
+
+.mr-1000 {
+  @include alignright(70%);
+}

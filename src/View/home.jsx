@@ -8,7 +8,7 @@ const Home = () => {
                 <Header />
             </div>
 
-            <div id="carouselExampleSlidesOnly" className="carousel slide " data-ride="carousel">
+            <div id="carouselExampleSlidesOnly" className="carousel slide  " data-ride="carousel">
                 <div className="carousel-inner carousel-juntas">
                     <div className="carousel-item active">
                         <img src="https://i.imgur.com/KOmFeoI.jpg" className="d-block w-100" alt="imagen" />
@@ -34,3 +34,5 @@ const Home = () => {
 
 }
 export default Home;
+
+
