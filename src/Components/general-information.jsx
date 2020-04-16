@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Loan from "./loan";
+import '../Style/Sass/style.css';
 
 const GeneralInformation = () => {
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -50,30 +51,52 @@ const GeneralInformation = () => {
   return (
     <div>
       <div>
+      <img src="https://i.imgur.com/J8hfANO.png" alt="imagen" />
         <form>
-          <label htmlFor="">Tipo de Documento:</label>
-          <select onChange={typeDoc}>
+          <table className='font margintable'>
+          <tr>
+            <td>
+            <label htmlFor="">Tipo de Documento:</label>
+            </td>
+            <td>
+            <select className="input" onChange={typeDoc}>
             <option value="">Seleciona</option>
             <option value="dni">DNI</option>
             <option value="pasaporte">Pasaporte</option>
             <option value="ce">C.E</option>
-          </select>
-
-          <label htmlFor="">Numero de Documento:</label>
-          <input type="number" onChange={numberDoc} value={numberDocument} />
-
-          <label htmlFor="">Rubro de Comercio:</label>
-          <select onChange={headingDoc}>
+            </select>
+            </td>
+            </tr>
+          <tr>
+            <td>
+            <label htmlFor="">Numero de Documento:</label>
+            </td>
+            <td>
+            <input className="input" type="number" onChange={numberDoc} value={numberDocument} />
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label htmlFor="">Rubro de Comercio:</label>
+            </td>
+         <td>
+         <select className="input" onChange={headingDoc}>
             <option value="servicios">Servicios</option>
             <option value="comercio">Comercio</option>
             <option value="manufactura">Manufactura</option>
             <option value="agropecuaria">Agropecuario</option>
             <option value="otros">Otros</option>
           </select>
+          <img src="https://img.icons8.com/metro/26/000000/question-shield.png" alt="imagen"/> 
+         </td>
+          </tr>
+          </table>
+            
         </form>
-        <button onClick={event => { handleButtonClick(event); }}>
+         
+        <button className="Rectangle-9 font" onClick={event => { handleButtonClick(event); }}>
           {" "}
-          Continuar
+          CONTINUAR
           </button>
         {buttonClicked ? (
           testForm() ? (<small>Escriba bien</small>) : <Loan
