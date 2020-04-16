@@ -6,11 +6,11 @@ const BanksList = ({
     typeDocument,
     numberDocument,
     headingDocument,
+    amountsRequest,
     bank,
-    months
+    months,
 }) => {
 
-    console.log('tabla bancos', months)
     return (
         <div>
             <section>
@@ -18,14 +18,22 @@ const BanksList = ({
                     <thead>
                         <tr>
                             <td>Banco/Entidad</td>
+                            <td>Numero de Cuotas</td>
                             <td>Cuota Mensual</td>
                             <td>TCEA</td>
+                            <td>Intereses</td>
                             <td>Monto Total</td>
-                            <td>Mas Informacion</td>
                         </tr>
                     </thead>
                     <tbody>
-                        {bank.map(element => <BanksItems getsBanks={element} key={element.name} month={months} />)}
+                        {bank.map(element => (
+                            <BanksItems
+                                getsBanks={element}
+                                key={element.name}
+                                month={months}
+                                amountRequest={amountsRequest}
+                            />
+                        ))}
                     </tbody>
                 </table>
             </section>

@@ -1,10 +1,10 @@
-import React from 'react';
-import GeneralInformation from './Components/general-information';
+import React from "react";
+import Routes from "./Routes";
 
 function App() {
   return (
-    <div >
-      <GeneralInformation />
+    <div>
+      <Routes />
     </div>
   );
 }

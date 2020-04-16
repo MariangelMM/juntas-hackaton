@@ -26,6 +26,27 @@ const GeneralInformation = () => {
     event.preventDefault();
     setButtonClicked(true);
   };
+
+
+  const testForm = () => {
+    let msgError = '';
+    if (typeDocument === 'dni') {
+      if (typeof (numberDocument) !== 'number' && numberDocument.length !== 8) {
+        msgError = <small>Escriba bien</small>
+      }
+      return msgError
+    }
+    else if (typeDocument === 'pasaporte' || typeDocument === 'ce') {
+      if (typeof (numberDocument) !== 'number' && numberDocument.length !== 9) {
+        msgError = <small>Otro Error</small>
+      }
+      return msgError;
+    }
+    return false;
+
+
+  }
+
   return (
     <div>
       <div>
@@ -50,12 +71,12 @@ const GeneralInformation = () => {
             <option value="otros">Otros</option>
           </select>
         </form>
-        <button onClick={event => handleButtonClick(event)}>
+        <button onClick={event => { handleButtonClick(event); }}>
           {" "}
           Continuar
           </button>
         {buttonClicked ? (
-          <Loan
+          testForm() ? (<small>Escriba bien</small>) : <Loan
             typeDoc={typeDocument}
             numberDoc={numberDocument}
             headingDoc={headingCommerc}
@@ -69,30 +90,3 @@ const GeneralInformation = () => {
 };
 
 export default GeneralInformation;
-
-
-
-// export default function App() {
-//   const { register, errors, handleSubmit } = useForm();
-//   const onSubmit = data => console.log(data);
-
-//   return (
-//   <form onSubmit={handleSubmit(onSubmit)}>
-//   <input name="singleErrorInput" ref={register({ required: true })} />
-//   {errors.singleErrorInput && "Your input is required"}
-
-//   {/* refer to the type of error to display message accordingly */}
-//   <input
-//   name="multipleErrorInput"
-//   ref={register({ required: true, maxLength: 50 })}
-//   />
-//   {errors.multipleErrorInput &&
-//   errors.multipleErrorInput.type === "required" &&
-//   "Your input is required"}
-//   {errors.multipleErrorInput &&
-//   errors.multipleErrorInput.type === "maxLength" &&
-//   "Your input exceed maxLength"}
-
-//   {/* register with validation */}
-// <input type="number" name="numberInput" ref={register({ min: 50 })} />
-// {errors.numberInput && "Your input required to be more than 50"}
