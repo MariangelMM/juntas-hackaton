@@ -12,10 +12,23 @@ header img {
   height: 100px;
 }
 
+.font {
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.imagen {
+  width: 200px;
+}
+
 /*-------------------------*\
 $COLORS
 \*-------------------------*/
 /*-------------------------*\
 $FONTS
 \*-------------------------*/
+@font-face {
+  font-family: Metropolis;
+  src: url("../Font/Metropolis Font family/Metropolis-Medium.otf");
+}
 /*# sourceMappingURL=style.css.map */
