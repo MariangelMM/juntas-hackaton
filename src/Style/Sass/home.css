@@ -1,0 +1,14 @@
+header div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header img {
+  width: 250px;
+  height: 100px;
+}
+/*# sourceMappingURL=home.css.map */
