@@ -8,7 +8,7 @@ const BanksItems = (props) => {
 
   const [buttonClickedRequest, setButtonClickedRequest] = useState(false);
 
-  const { image, name, tcea, total, quota, interes } = props.getsBanks;
+  const { image, tcea, total, quota, interes } = props.getsBanks;
 
   const handleButtonClickRequest = event => {
     event.preventDefault();
@@ -36,13 +36,6 @@ const BanksItems = (props) => {
                 pathname: '/requisitos', state: {
                   namex: 'todo'
                 }
-
-                // name,
-                // month: props.month,
-                // quota,
-                // tcea,
-                // total
-
               }}
             >  Solicitar </Link>
 

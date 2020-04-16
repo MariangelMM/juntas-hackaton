@@ -1,0 +1,9 @@
+@mixin col-juntas {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin input {
+  width: 338px;
+  height: 40px;
+}

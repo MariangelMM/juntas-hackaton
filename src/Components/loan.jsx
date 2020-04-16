@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import firebase from "../Firebase/firebase";
 import { useCollection } from 'react-firebase-hooks/firestore';
 import BanksList from "./banks-list";
@@ -72,23 +71,31 @@ const Loan = ({ typeDoc, numberDoc, headingDoc }) => {
       {loading && <span> Loading...</span>}
       {value && (
         <div>
-          <form action="">
-            <label htmlFor="">Monto Solicitado</label>
-            <input type="text" onChange={handleAmountRequest} />
+          <img src='https://i.imgur.com/QLt7J9I.png' className="img-fluid" alt="banner" />
+          <form className="form-loan">
+            <div class="form-group">
+              <div>
+                <label htmlFor="">Monto Solicitado (S/)</label>
+                <input class="form-control " type="text" onChange={handleAmountRequest} placeholder="Escribe el Monto" />
+              </div>
+              <div className="small-loan">
+                <small >*El monto minimo de un prestamo es de S/.300.00</small>
+                <small>*El monto maximo de un prestamo es de S/.10000.00</small>
+              </div>
 
-            <small>*El monto minimo de un prestamo es de S/.300.00</small>
-            <small>*El monto maximo de un prestamo es de S/.10000.00</small>
+            </div>
 
-            <label htmlFor="">Numero de Cuotas:</label>
-            <select onChange={numberquotas}>
-              <option value="">Seleciona</option>
-              <option value="6">6</option>
-              <option value="12">12</option>
-              <option value="18">18</option>
-              <option value="24">24</option>
-              <option value="36">36</option>
-            </select>
-
+            <div clasName="select-loan">
+              <label htmlFor="">N° de Cuotas:</label>
+              <select class="select" onChange={numberquotas}>
+                <option value="">Seleciona</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="18">18</option>
+                <option value="24">24</option>
+                <option value="36">36</option>
+              </select>
+            </div>
             <button onClick={event => { handleButtonClick(event); getBanks() }}> Continuar</button>
             {buttonClicked ? (
               <BanksList
