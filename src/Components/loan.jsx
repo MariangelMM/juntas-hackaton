@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import firebase from "../Firebase/firebase";
 import { useCollection } from 'react-firebase-hooks/firestore';
 import BanksList from "./banks-list";
+import Header from "./header";
 
-const Loan = ({ typeDoc, numberDoc, headingDoc }) => {
+const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
   const [buttonClicked, setButtonClicked] = useState(false);
   const [amountRequest, SetAmountRequest] = useState("");
   const [month, setMonth] = useState("");
@@ -67,6 +68,7 @@ const Loan = ({ typeDoc, numberDoc, headingDoc }) => {
 
   return (
     <div>
+      <Header />
       {error && <strong>Error: {JSON.stringify(error)}</strong>}
       {loading && <span> Loading...</span>}
       {value && (
@@ -87,7 +89,7 @@ const Loan = ({ typeDoc, numberDoc, headingDoc }) => {
 
             <div clasName="select-loan">
               <label htmlFor="">N° de Cuotas:</label>
-              <select class="select" onChange={numberquotas}>
+              <select class="input" onChange={numberquotas}>
                 <option value="">Seleciona</option>
                 <option value="6">6</option>
                 <option value="12">12</option>
@@ -96,7 +98,7 @@ const Loan = ({ typeDoc, numberDoc, headingDoc }) => {
                 <option value="36">36</option>
               </select>
             </div>
-            <button onClick={event => { handleButtonClick(event); getBanks() }}> Continuar</button>
+            <button className="btn-pink" onClick={event => { handleButtonClick(event); getBanks() }}> Continuar</button>
             {buttonClicked ? (
               <BanksList
                 typeDocument={typeDoc}
@@ -115,4 +117,4 @@ const Loan = ({ typeDoc, numberDoc, headingDoc }) => {
   );
 };
 
-export default Loan;
+export default MainLoan;

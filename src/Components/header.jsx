@@ -5,7 +5,7 @@ import '../Style/Sass/style.css';
 const Header = () => {
     return (
         <header >
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-lg navbar-light ">
 
                 <img src="https://i.imgur.com/ESXUlFL.png" alt="imagen" />
 
@@ -15,7 +15,7 @@ const Header = () => {
                 <div class="collapse navbar-collapse flex-row-reverse " id="navbarNavAltMarkup">
                     <div class="navbar-nav font">
                         <Link class="nav-item nav-link active m-3" to="/">Inicio <span class="sr-only">(current)</span></Link>
-                        <Link class="nav-item nav-link m-3" to="/loan">Prestamos</Link>
+                        <Link class="nav-item nav-link m-3 btn-yellow" to="/loan">Prestamos</Link>
                         <Link class="nav-item nav-link m-3" to="/netword">Red de Emprendedoras</Link>
                         <Link class="nav-item nav-link m-3" to="/improvecommerce">Mejora tu Negocio</Link>
                     </div>

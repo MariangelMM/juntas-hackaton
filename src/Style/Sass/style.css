@@ -20,30 +20,16 @@ header img {
 .imagen {
   width: 200px;
 }
-.input{
-  width: 338px;
-  height: 40px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000; 
-  
-}
-.margintable{
+
+.margintable {
   margin-left: 217px;
   margin-top: 50px;
+  width: 1026px;
 }
-.Rectangle-9 {
-  width: 244px;
-  height: 60px;
-  border-radius: 10px;
-  border: solid 0 #000000;
-  background-color: #f61067;
-  margin-left: 1005px;
-  margin-top: 20px;
-  } 
+
+.carousel-juntas {
+  height: 500px;
+}
 
 /*-------------------------*\
 $COLORS
@@ -116,5 +102,67 @@ form .select-loan select {
 * {
   margin: 0px;
   padding: 0px;
+}
+
+.font {
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.btn-pink {
+  width: 244px;
+  height: 60px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #f61067;
+  margin-top: 4%;
+  color: white;
+  text-transform: uppercase;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.btn-pink-link {
+  width: 244px;
+  height: 60px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #f61067;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.btn-yellow {
+  width: 244px;
+  height: 60px;
+  background-color: #ffd200;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  text-align: center;
+  color: #000000;
+}
+
+.input {
+  width: 338px;
+  height: 40px;
+}
+
+.row-yellow {
+  width: 1026px;
+  height: 61px;
+  background-color: #ffd200;
+  margin-bottom: 50px;
+}
+
+.ml-1000 {
+  margin-left: 70%;
+}
+
+.mr-1000 {
+  margin-right: 70%;
 }
 /*# sourceMappingURL=style.css.map */
