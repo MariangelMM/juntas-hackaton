@@ -48,26 +48,48 @@ const Requirements = (props) => {
 
     return (
         <section>
-            <p>Debe Subir los archivos como imagenes</p>
-            <div>
-                <label htmlFor="upload-doc"><i className="fas fa-plus-circle"></i>Ingrese Documento de Identidad</label>
-                <input type='file' className="hide" id="upload-doc" onChange={handleOnChangeDoc} />
-                <button htmlFor="upload-doc" onClick={() => { setStateFileDoc('') }}><i className="fas fa-trash-alt"></i></button>
+             <img src="https://i.imgur.com/9eMjuLW.png" alt="imagen" />
+            <h4 className="margintable">Debe Subir los archivos como imagenes</h4>
+            <table className="font margintable">
+                <tr className= "Rectangle-77">
+                    <td>Documento de Identidad</td>
+                    <td>
+                    <label htmlFor="upload-doc"><i className="fas fa-plus-circle"></i></label>
+                    </td>
+                    <td>
+                    <input type='file' className="hide" id="upload-doc" onChange={handleOnChangeDoc} />
+                    </td>
+                      <td>
+                      <button htmlFor="upload-doc" onClick={() => { setStateFileDoc('') }}><i className="fas fa-trash-alt"></i></button>
+                    </td>         
+                <td>
                 <small>
                     {stateFileDoc !== '' ? (<i className="fas fa-check"></i>) : ''}
                     {stateFileDoc}</small>
-            </div>
+                </td>
 
-            <div>
-                <label htmlFor="upload-re"><i className="fas fa-plus-circle"></i>Ingrese Recibo</label>
+                </tr>
+                 <tr> <br/></tr>
+                <tr  className= "Rectangle-77">
+                <td>Recibo de servicios (luz o agua)</td>
+                <td>
+                    <label htmlFor="upload-re"><i className="fas fa-plus-circle"></i></label>
+                </td>
+                <td>
                 <input type='file' className="hide" id="upload-re" onChange={handleOnChangeRe} />
+                </td>
+                <td>
                 <button htmlFor="upload-re" onClick={() => { setStateFileRe('') }}><i className="fas fa-trash-alt"></i></button>
-                <small>
+                </td>
+               <td>
+               <small>
                     {stateFileRe !== '' ? (<i className="fas fa-check"></i>) : ''}
                     {stateFileRe}
                 </small>
-            </div>
-            <Link className="btn btn-success" to="/detaildeposit">  Continuar</Link>
+               </td>            
+                </tr> 
+            </table>
+            <button className="Rectangle-9 font"><Link to="/detaildeposit"></Link>CONTINUAR</button>
         </section>
     )
 }

@@ -30,6 +30,26 @@ header img {
   height: 700px;
 }
 
+.margintable{
+  margin-left: 217px;
+  margin-top: 50px;
+  width: 1026px;
+}
+.Rectangle-9 {
+  width: 244px;
+  height: 60px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #f61067;
+  margin-left: 1005px;
+  margin-top: 20px;
+  } 
+.Rectangle-77 {
+    width: 1026px;
+    height: 61px;
+    background-color: #ffd200;
+    margin-bottom: 50px;
+    } 
 /*-------------------------*\
 $COLORS
 \*-------------------------*/
