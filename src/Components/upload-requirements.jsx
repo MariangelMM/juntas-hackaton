@@ -8,9 +8,7 @@ import firebase from '../Firebase/firebase';
 const Requirements = (props) => {
 
     // const {id} = props.match.params
-
-    console.log('prosp', props.location.data)
-
+    console.log('prospss', props.location.state);
 
 
     const [state, setState] = useState();
@@ -56,7 +54,7 @@ const Requirements = (props) => {
                 <input type='file' className="hide" id="upload-doc" onChange={handleOnChangeDoc} />
                 <button htmlFor="upload-doc" onClick={() => { setStateFileDoc('') }}><i className="fas fa-trash-alt"></i></button>
                 <small>
-                    {stateFileDoc !== '' ? (<i class="fas fa-check"></i>) : ''}
+                    {stateFileDoc !== '' ? (<i className="fas fa-check"></i>) : ''}
                     {stateFileDoc}</small>
             </div>
 

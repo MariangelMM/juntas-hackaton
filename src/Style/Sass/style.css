@@ -20,30 +20,15 @@ header img {
 .imagen {
   width: 200px;
 }
-.input{
-  width: 338px;
-  height: 40px;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #000000; 
-  
+
+.carousel-juntas {
+  height: 500px;
 }
-.margintable{
-  margin-left: 217px;
-  margin-top: 50px;
+
+.img-carrousel {
+  width: auto;
+  height: 700px;
 }
-.Rectangle-9 {
-  width: 244px;
-  height: 60px;
-  border-radius: 10px;
-  border: solid 0 #000000;
-  background-color: #f61067;
-  margin-left: 1005px;
-  margin-top: 20px;
-  } 
 
 /*-------------------------*\
 $COLORS
