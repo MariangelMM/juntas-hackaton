@@ -13,11 +13,11 @@ const Header = () => {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse flex-row-reverse " id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <Link class="nav-item nav-link active m-3 " >Inicio <span class="sr-only">(current)</span></Link>
-                        <Link class="nav-item nav-link m-3" >Prestamos</Link>
-                        <Link class="nav-item nav-link m-3" >Red de Emprendedoras</Link>
-                        <Link class="nav-item nav-link m-3" >Mejora tu Negocio</Link>
+                    <div class="navbar-nav font">
+                        <Link class="nav-item nav-link active m-3" to="/">Inicio <span class="sr-only">(current)</span></Link>
+                        <Link class="nav-item nav-link m-3" to="/loan">Prestamos</Link>
+                        <Link class="nav-item nav-link m-3" to="/netword">Red de Emprendedoras</Link>
+                        <Link class="nav-item nav-link m-3" to="/improvecommerce">Mejora tu Negocio</Link>
                     </div>
                 </div>
             </nav>

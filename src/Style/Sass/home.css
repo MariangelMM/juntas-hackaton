@@ -11,4 +11,13 @@ header img {
   width: 250px;
   height: 100px;
 }
+
+.font {
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.imagen {
+  width: 200px;
+}
 /*# sourceMappingURL=home.css.map */

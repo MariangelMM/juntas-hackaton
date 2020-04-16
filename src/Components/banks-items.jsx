@@ -8,7 +8,7 @@ const BanksItems = (props) => {
 
   const [buttonClickedRequest, setButtonClickedRequest] = useState(false);
 
-  const { name, tcea, total, quota, interes } = props.getsBanks;
+  const { image, name, tcea, total, quota, interes } = props.getsBanks;
 
   const handleButtonClickRequest = event => {
     event.preventDefault();
@@ -20,7 +20,7 @@ const BanksItems = (props) => {
     <React.Fragment >
       <HashRouter>
         <tr>
-          <td>{name}</td>
+          <td><img src={image} className="imagen" alt="banco" /></td>
           <td>{props.month}</td>
           <td>{quota}</td>
           <td>{tcea}</td>

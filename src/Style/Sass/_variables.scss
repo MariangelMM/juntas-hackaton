@@ -9,5 +9,12 @@ $color-pink: #c5165b;
 $FONTS
 \*-------------------------*/
 
-$font-tittle: "Open Sans", sans-serif;
+$font-tittle: "Monserra", sans-serif;
 $font-body: "Nunito", sans-serif;
+
+$font-family: "Montserrat", sans-serif;
+
+@font-face {
+  font-family: Metropolis;
+  src: url("../Font/Metropolis Font family/Metropolis-Medium.otf");
+}
