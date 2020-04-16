@@ -8,7 +8,7 @@ const BanksItems = (props) => {
 
   const [buttonClickedRequest, setButtonClickedRequest] = useState(false);
 
-  const { image, name, tcea, total, quota, interes } = props.getsBanks;
+  const { image, tcea, total, quota, interes } = props.getsBanks;
 
   const handleButtonClickRequest = event => {
     event.preventDefault();
