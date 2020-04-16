@@ -31,7 +31,21 @@ const BanksItems = (props) => {
               {" "}
               Ver Requisitos
             </button>
-            <Link className="btn btn-success" to="/requisitos">  Solicitar </Link>
+            <Link
+              to={{
+                pathname: '/requisitos', state: {
+                  namex: 'todo'
+                }
+
+                // name,
+                // month: props.month,
+                // quota,
+                // tcea,
+                // total
+
+              }}
+            >  Solicitar </Link>
+
           </td>
         </tr>
         <tr>
@@ -40,7 +54,7 @@ const BanksItems = (props) => {
           {}
         </tr>
       </HashRouter>
-    </React.Fragment>
+    </React.Fragment >
   );
 }
 
