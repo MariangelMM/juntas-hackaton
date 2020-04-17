@@ -29,11 +29,17 @@
 .row-yellow {
   @include rowyellow;
 }
-
+.table-yellow {
+  @include tableyellow;
+}
+.btn-yellow-link{
+  @include  btnyellowlink;
+}
 .ml-1000 {
-  @include alignleft(70%);
+  @include alignleft(65%);
 }
 
 .mr-1000 {
   @include alignright(70%);
 }
+

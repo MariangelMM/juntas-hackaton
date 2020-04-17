@@ -13,9 +13,9 @@ const BanksItems = (props) => {
   return (
     <React.Fragment >
       <tr>
-        <td><img src={image} className="imagen" alt="banco" /></td>
-        <td>{props.month}</td>
+        <td><img src={image} className="imagen img-fluid" alt="banco" /></td>
         <td>{quota}</td>
+        <td>{props.month}</td>
         <td>{tcea}</td>
         <td>{interes}</td>
         <td>{total}</td>
@@ -35,6 +35,7 @@ const BanksItems = (props) => {
                 amountrequest: props.amountRequest,
               }
             }}
+            className="btn-yellow-link"
           >  Solicitar </Link>
 
         </td>

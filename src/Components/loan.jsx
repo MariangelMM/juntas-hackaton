@@ -98,8 +98,9 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
                 <option value="36">36</option>
               </select>
             </div>
-            <button className="btn-pink" onClick={event => { handleButtonClick(event); getBanks() }}> Continuar</button>
-            {buttonClicked ? (
+            <button className="btn-pink ml-1000" onClick={event => { handleButtonClick(event); getBanks() }}> Continuar</button>
+          </form>
+          {buttonClicked ? (
               <BanksList
                 typeDocument={typeDoc}
                 numberDocument={numberDoc}
@@ -110,7 +111,6 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
               />
             ) : null}
             {}
-          </form>
         </div>
       )}
     </div >

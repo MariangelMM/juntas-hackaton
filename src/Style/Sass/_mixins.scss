@@ -20,6 +20,8 @@
   margin-top: 4%;
   color: white;
   text-transform: uppercase;
+   margin-top: 20px;
+  margin-bottom: 20px;
   @include font;
 }
 
@@ -43,10 +45,15 @@
   width: 1026px;
   height: 61px;
   background-color: #ffd200;
+  margin-top: 20px;
   margin-bottom: 50px;
   border: 10px solid white;
 }
-
+@mixin tableyellow {
+  font-weight: bold;
+  background-color: #ffd200;
+  @include font;
+}
 @mixin btnyellow {
   width: 244px;
   height: 60px;
@@ -57,7 +64,23 @@
   text-align: center;
   color: #000000;
 }
-
+@mixin btnyellowlink {
+  width: 165px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #ffd200;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 10px;
+  &:hover {
+    text-decoration: none;
+    color: #000000;;
+  }
+  @include font;
+}
 @mixin font {
   font-family: Metropolis;
   font-size: 22px;

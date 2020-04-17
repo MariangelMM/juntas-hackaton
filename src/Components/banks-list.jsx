@@ -13,16 +13,16 @@ const BanksList = ({
 
     return (
         <div>
-            <section>
-                <table>
+                <table className="table table-striped mr-table">
                     <thead>
-                        <tr>
+                        <tr className="table-yellow">
                             <td>Banco/Entidad</td>
-                            <td>Numero de Cuotas</td>
-                            <td>Cuota Mensual</td>
+                            <td>Cuota mensual</td>
+                            <td>N° de Cuotas</td>
                             <td>TCEA</td>
-                            <td>Intereses</td>
+                            <td>Interés</td>
                             <td>Monto Total</td>
+                            <td>Más informacion</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,7 +37,6 @@ const BanksList = ({
                         ))}
                     </tbody>
                 </table>
-            </section>
         </div>
     );
 };

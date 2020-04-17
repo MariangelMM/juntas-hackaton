@@ -123,6 +123,8 @@ form .select-loan select {
   text-transform: uppercase;
   font-family: Metropolis;
   font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-pink-link {
@@ -154,6 +156,24 @@ form .select-loan select {
   color: #000000;
 }
 
+.btn-yellow-link {
+  width: 165px;
+  height: 30px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #ffd200;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 10px;
+  font-family: Metropolis;
+  font-size: 20px;
+}
+.btn-yellow-link:hover {
+  text-decoration: none;
+  color: #000000;
+}
 .input {
   width: 338px;
   height: 40px;
@@ -170,6 +190,12 @@ form .select-loan select {
   border: 10px solid white;
 }
 
+.table-yellow {
+  font-weight: bold;
+  background-color: #ffd200;
+  font-family: Metropolis;
+  font-size: 20px;
+}
 .ml-1000 {
   margin-left: 70%;
 }
@@ -177,4 +203,5 @@ form .select-loan select {
 .mr-1000 {
   margin-right: 70%;
 }
+
 /*# sourceMappingURL=style.css.map */
