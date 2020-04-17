@@ -48,3 +48,12 @@
 .mb-1000 {
   @include alignbottom(10%);
 }
+
+.ml {
+  margin-left: 25%;
+}
+
+.hover {
+  text-decoration: none;
+  color: white;
+}

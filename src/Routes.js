@@ -2,11 +2,11 @@ import React from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from "./View/home";
 import Loan from "./View/loan";
+import LoanStart from "./Components/loan-start";
 import Network from "./View/network";
 import ImproveCommerce from "./View/improve-commerce";
-import MainLoan from "./Components/loan";
 import LoanDetail from "./Components/loan-detail";
-
+import GeneralInformation from "./Components/general-information";
 import Requirements from "./Components/upload-requirements";
 import DetailDeposit from "./Components/detail-deposit";
 
@@ -15,12 +15,12 @@ const Routes = () => {
     <HashRouter>
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/loanstart" component={LoanStart} />
         <Route path="/loan" component={Loan} />
         <Route path="/netword" component={Network} />
         <Route path="/improvecommerce" component={ImproveCommerce} />
-        <Route path="/mainloan" component={MainLoan} />
         <Route path="/loandetail" component={LoanDetail} />
-
+        <Route path="/generalinformation" component={GeneralInformation} />
         <Route path="/requisitos" component={Requirements} />
         <Route path="/detaildeposit" component={DetailDeposit} />
       </Switch>

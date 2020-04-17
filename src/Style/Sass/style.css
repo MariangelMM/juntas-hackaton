@@ -3,8 +3,8 @@ header div {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header img {
@@ -34,8 +34,8 @@ header img {
 .style {
   margin: 60px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 /*-------------------------*\
@@ -87,8 +87,8 @@ $FONTS
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-left: 20%;
 }
 
@@ -201,4 +201,12 @@ form .select-loan select {
   background-color: #ffd200;
   border: none;
 }
-/*# sourceMappingURL=style.css.map */
+
+.ml {
+  margin-left: 25%;
+}
+
+.hover {
+  text-decoration: none;
+  color: white;
+}
