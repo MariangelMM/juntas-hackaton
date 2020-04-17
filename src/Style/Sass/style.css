@@ -194,4 +194,13 @@ form .select-loan select {
 .mr-1000 {
   margin-right: 70%;
 }
+
+.ml {
+  margin-left: 25%;
+}
+
+.hover {
+  text-decoration: none;
+  color: white;
+}
 /*# sourceMappingURL=style.css.map */

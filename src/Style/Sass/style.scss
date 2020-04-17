@@ -45,3 +45,12 @@
 .mr-1000 {
   @include alignright(70%);
 }
+
+.ml {
+  margin-left: 25%;
+}
+
+.hover {
+  text-decoration: none;
+  color: white;
+}
