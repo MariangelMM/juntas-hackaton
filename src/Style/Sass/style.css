@@ -182,6 +182,24 @@ form .select-loan select {
   color: #000000;
 }
 
+@media (max-width: 767px) {
+  .font {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .font {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .font {
+    font-size: 18px;
+  }
+}
+
 .font-light {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
@@ -208,6 +226,24 @@ form .select-loan select {
   color: #000000;
 }
 
+@media (max-width: 767px) {
+  .btn-pink {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .btn-pink {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .btn-pink {
+    font-size: 18px;
+  }
+}
+
 .btn-pink-link {
   width: 244px;
   height: 60px;
@@ -229,6 +265,45 @@ form .select-loan select {
 .btn-pink-link:hover {
   text-decoration: none;
   color: #000000;
+}
+
+@media (max-width: 767px) {
+  .btn-pink-link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .btn-pink-link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .btn-pink-link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-pink-link {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .btn-pink-link {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .btn-pink-link {
+    width: 205px;
+    height: 50px;
+  }
 }
 
 .btn-yellow {
@@ -272,6 +347,24 @@ form .select-loan select {
   color: #000000;
 }
 
+@media (max-width: 767px) {
+  .table-yellow {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .table-yellow {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .table-yellow {
+    font-size: 18px;
+  }
+}
+
 .table-pink {
   font-weight: bold;
   background-color: #f61067;
@@ -283,6 +376,24 @@ form .select-loan select {
 .table-pink:hover {
   text-decoration: none;
   color: #000000;
+}
+
+@media (max-width: 767px) {
+  .table-pink {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .table-pink {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .table-pink {
+    font-size: 18px;
+  }
 }
 
 .btn-yellow-link {
@@ -304,6 +415,24 @@ form .select-loan select {
 .btn-yellow-link:hover {
   text-decoration: none;
   color: #000000;
+}
+
+@media (max-width: 767px) {
+  .btn-yellow-link {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .btn-yellow-link {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .btn-yellow-link {
+    font-size: 18px;
+  }
 }
 
 .ml-1000 {
