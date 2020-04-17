@@ -75,10 +75,10 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
         <div>
           <img src='https://i.imgur.com/QLt7J9I.png' className="img-fluid" alt="banner" />
           <form className="form-loan">
-            <div class="form-group">
+            <div className="form-group">
               <div>
                 <label htmlFor="">Monto Solicitado (S/)</label>
-                <input class="form-control " type="text" onChange={handleAmountRequest} placeholder="Escribe el Monto" />
+                <input className="" type="text" onChange={handleAmountRequest} placeholder="Escribe el Monto" />
               </div>
               <div className="small-loan">
                 <small >*El monto minimo de un prestamo es de S/.300.00</small>
@@ -87,9 +87,9 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
 
             </div>
 
-            <div clasName="select-loan">
+            <div>
               <label htmlFor="">N° de Cuotas:</label>
-              <select class="input" onChange={numberquotas}>
+              <select className="input" onChange={numberquotas}>
                 <option value="">Seleciona</option>
                 <option value="6">6</option>
                 <option value="12">12</option>

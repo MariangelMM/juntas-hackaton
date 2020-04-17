@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Loan from "./loan";
 import "../Style/Sass/style.css";
 import { Link } from "react-router-dom";
 
@@ -30,17 +29,18 @@ const GeneralInformation = () => {
   const testForm = (event) => {
     let msgError = "";
     if (!numberDocument) {
-      msgError = 'vacio';
+      msgError = 'Debe ingresar su Número de Documento';
+    }
+    else if (!typeDocument) {
+      msgError = 'Seleccione un Tipo de Documento';
     }
     else if (typeDocument === "dni") {
       if (typeof numberDocument !== "number" && numberDocument.length !== 8) {
-
-        msgError = 'Escriba bien';
+        msgError = 'Número de Documento Incorrecto';
       }
     } else if (typeDocument === "pasaporte" || typeDocument === "ce") {
       if (typeof numberDocument !== "number" && numberDocument.length !== 9) {
-
-        msgError = 'Otro Error';
+        msgError = 'Número de Documento Incorrecto';
       }
     }
     if (msgError) {
@@ -58,52 +58,52 @@ const GeneralInformation = () => {
           src="https://i.imgur.com/J8hfANO.png"
           alt="imagen"
         />
-        <form>
+        <form >
           <table className="font margintable">
-            <tr>
-              <td>
-                <label htmlFor="">Tipo de Documento:</label>
+            <tbody>
+              <tr>
+                <td>
+                  Tipo de Documento:
               </td>
-              <td>
-                <select className="input" onChange={typeDoc}>
-                  <option value="">Seleciona</option>
-                  <option value="dni">DNI</option>
-                  <option value="pasaporte">Pasaporte</option>
-                  <option value="ce">C.E</option>
-                </select>
+                <td>
+                  <select className="input" onChange={typeDoc}>
+                    <option value="">Seleciona</option>
+                    <option value="dni">DNI</option>
+                    <option value="pasaporte">Pasaporte</option>
+                    <option value="ce">C.E</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Numero de Documento:
               </td>
-            </tr>
-            <tr>
-              <td>
-                <label htmlFor="">Numero de Documento:</label>
+                <td>
+                  <input
+                    className="input"
+                    type="text"
+                    onChange={numberDoc}
+                    value={numberDocument}
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Rubro de Comercio:
               </td>
-              <td>
-                <input
-                  className="input"
-                  type="number"
-                  onChange={numberDoc}
-                  value={numberDocument}
-                />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label htmlFor="">Rubro de Comercio:</label>
-              </td>
-              <td>
-                <select className="input" onChange={headingDoc}>
-                  <option value="servicios">Servicios</option>
-                  <option value="comercio">Comercio</option>
-                  <option value="manufactura">Manufactura</option>
-                  <option value="agropecuaria">Agropecuario</option>
-                  <option value="otros">Otros</option>
-                </select>
-                <img
-                  src="https://img.icons8.com/metro/26/000000/question-shield.png"
-                  alt="imagen"
-                />
-              </td>
-            </tr>
+                <td>
+                  <select className="input" onChange={headingDoc}>
+                    <option value="servicios">Servicios</option>
+                    <option value="comercio">Comercio</option>
+                    <option value="manufactura">Manufactura</option>
+                    <option value="agropecuaria">Agropecuario</option>
+                    <option value="otros">Otros</option>
+                  </select>
+                  <img
+                    src="https://img.icons8.com/metro/26/000000/question-shield.png"
+                    alt="imagen"
+                  />
+                </td>
+              </tr>
+            </tbody>
           </table>
           <small>{msgError}</small>
         </form>
@@ -119,7 +119,7 @@ const GeneralInformation = () => {
               headingDoc: headingCommerc
             }
           }}
-          className="btn-pink ml-1000"
+          className="btn-pink-link ml-1000"
           onClick={event => {
             testForm(event);
           }}

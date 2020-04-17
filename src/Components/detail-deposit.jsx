@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
-import LoanDetail from './loan-detail';
+import { Link } from "react-router-dom";
 
-const DetailDeposit = () => {
+const DetailDeposit = (props) => {
+
+    console.log(props.location)
+
+    const propsState = props.location.propsState;
 
     const [number, setNumber] = useState('');
 
-    const [buttonClicked, setButtonClicked] = useState(false);
+
+    const [msgError, setMsjError] = useState('');
 
     const accountNumber = e => {
         setNumber(e.target.value);
@@ -13,17 +18,15 @@ const DetailDeposit = () => {
     };
 
 
-    const handleButtonClick = event => {
-        event.preventDefault();
-        setButtonClicked(true);
-    };
-
-    const validateAccountNumber = () => {
+    const validateAccountNumber = (event) => {
         let msgError = '';
         if (typeof (number) !== 'number' && number.length <= 11) {
-            msgError = <small>El numero de cuenta no es valido y/o debe ser un numero</small>
+            msgError = 'El número de cuenta no es válido';
         }
-        return msgError;
+        if (msgError) {
+            event.preventDefault();
+            setMsjError(msgError)
+        }
     }
 
     return (
@@ -32,24 +35,27 @@ const DetailDeposit = () => {
             <form action="">
                 <label htmlFor="">N° de Cuenta donde se realizara el deposito</label>
                 <input type="text" onChange={accountNumber} />
+                <small>{msgError}</small>
 
                 <input type="checkbox" />
                 <label htmlFor="">He leido y acepto Terminos y Condiciones y las politicas de uso de datos personales de Juntas</label>
 
-
-                <button onClick={event => { handleButtonClick(event) }}>
-                    {" "}
-                    SOLICITAR PRESTAMO
-                     </button>
-                {buttonClicked ? (
-                    validateAccountNumber() ? (<small>El numero de cuenta no es valido y/o debe ser un numero</small>) :
-                        <LoanDetail />
-                ) : null}
-                {}
-
+                <Link
+                    to={{
+                        pathname: "/loandetail",
+                        propsState,
+                    }}
+                    className="btn-pink-link ml-1000"
+                    onClick={event => {
+                        validateAccountNumber(event);
+                    }}
+                >
+                    CONTINUAR
+                    </Link>
             </form>
         </div>
     )
 
 }
 export default DetailDeposit;
+

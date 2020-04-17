@@ -6,6 +6,9 @@
 @mixin input {
   width: 338px;
   height: 40px;
+  border-radius: 5px;
+  background: white;
+  margin: 7px;
 }
 
 @mixin btnpink {
@@ -29,6 +32,10 @@
   color: white;
   text-transform: uppercase;
   padding: 20px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
   @include font;
 }
 
@@ -37,6 +44,7 @@
   height: 61px;
   background-color: #ffd200;
   margin-bottom: 50px;
+  border: 10px solid white;
 }
 
 @mixin btnyellow {
