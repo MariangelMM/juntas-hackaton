@@ -70,3 +70,6 @@
 @mixin alignright($margin) {
   margin-right: $margin;
 }
+@mixin alignbottom($margin) {
+  margin-bottom: $margin;
+}

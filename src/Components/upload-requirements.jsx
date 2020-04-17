@@ -4,21 +4,18 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import firebase from '../Firebase/firebase';
+import Header from '../Components/header'
 
 const Requirements = (props) => {
 
     // const {id} = props.match.params
     console.log('prospss', props.location.state);
 
-
     const propsState = props.location.state;
 
     const [state, setState] = useState();
     const [stateFileDoc, setStateFileDoc] = useState('');
     const [stateFileRe, setStateFileRe] = useState('');
-
-
-
 
     const handleOnChangeDoc = (e) => {
         const file = e.target.files[0];
@@ -52,12 +49,14 @@ const Requirements = (props) => {
 
     return (
         <section>
-            <img src="https://i.imgur.com/9eMjuLW.png" alt="imagen" />
+             <Header />
+            <img className="img-fluid" src="https://i.imgur.com/9eMjuLW.png" alt="imagen" />
             <h4 className="margintable">Debe Subir los archivos como imagenes</h4>
             <table className="font margintable">
                 <tbody>
                     <tr className="row-yellow">
                         <td>Documento de Identidad</td>
+                        <td>{stateFileDoc}</td>
                         <td>
                             <label htmlFor="upload-doc"><i className="fas fa-plus-circle"></i></label>
                         </td>
@@ -65,17 +64,18 @@ const Requirements = (props) => {
                             <input type='file' className="hide" id="upload-doc" onChange={handleOnChangeDoc} />
                         </td>
                         <td>
-                            <button htmlFor="upload-doc" onClick={() => { setStateFileDoc('') }}><i className="fas fa-trash-alt"></i></button>
+                            <button htmlFor="upload-doc" className="btnColorTrash" onClick={() => { setStateFileDoc('') }}><i className="fas fa-trash-alt"></i></button>
                         </td>
                         <td>
                             <small>
                                 {stateFileDoc !== '' ? (<i className="fas fa-check"></i>) : ''}
-                                {stateFileDoc}</small>
+                            </small>
                         </td>
 
                     </tr>
                     <tr className="row-yellow">
                         <td>Recibo de servicios (luz o agua)</td>
+                        <td> {stateFileRe}</td>
                         <td>
                             <label htmlFor="upload-re"><i className="fas fa-plus-circle"></i></label>
                         </td>
@@ -83,23 +83,25 @@ const Requirements = (props) => {
                             <input type='file' className="hide" id="upload-re" onChange={handleOnChangeRe} />
                         </td>
                         <td>
-                            <button htmlFor="upload-re" onClick={() => { setStateFileRe('') }}><i className="fas fa-trash-alt"></i></button>
+                            <button htmlFor="upload-re" className="btnColorTrash" onClick={() => { setStateFileRe('') }}><i className="fas fa-trash-alt"></i></button>
 
                         </td>
                         <td>
                             <small>
                                 {stateFileRe !== '' ? (<i className="fas fa-check"></i>) : ''}
-                                {stateFileRe}
+                               
                             </small>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <Link className="btn-pink-link" to={{
+            <br/>
+           <Link className="btn-pink-link mb-1000 ml-1000"  to={{
                 pathname: "/detaildeposit",
                 propsState,
             }}
             >Continuar</Link>
+            
         </section>
     )
 }

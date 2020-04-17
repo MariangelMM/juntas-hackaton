@@ -81,8 +81,8 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
                 <input className="" type="text" onChange={handleAmountRequest} placeholder="Escribe el Monto" />
               </div>
               <div className="small-loan">
-                <small >*El monto minimo de un prestamo es de S/.300.00</small>
-                <small>*El monto maximo de un prestamo es de S/.10000.00</small>
+                <small >*El monto mínimo de un préstamo es de S/.300.00</small>
+                <small>*El monto máximo de un préstamo es de S/.10000.00</small>
               </div>
 
             </div>

@@ -10,6 +10,10 @@
 .font {
   @include font;
 }
+
+.font-title {
+  @include fonttitle;
+}
 .btn-pink {
   @include btnpink;
 }
@@ -22,6 +26,10 @@
   @include btnyellow;
 }
 
+.color-yellow {
+  @include coloryellow;
+}
+
 .input {
   @include input;
 }
@@ -31,9 +39,21 @@
 }
 
 .ml-1000 {
-  @include alignleft(70%);
+  @include alignleft(78%);
 }
 
 .mr-1000 {
   @include alignright(70%);
+}
+.mb-1000 {
+  @include alignbottom(10%);
+}
+
+.ml {
+  margin-left: 25%;
+}
+
+.hover {
+  text-decoration: none;
+  color: white;
 }
