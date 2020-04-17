@@ -268,6 +268,47 @@ form .select-loan select {
   color: #2d2926;
 }
 /*# sourceMappingURL=style.css.map */
+.centerH4 {
+  margin-top: 15%;
+  text-align: center;
+  font-weight: bold;
+}
+/* .termYCon {
+  background-color: hotpink;;
+} */
+.termYCon {
+  width: 270px;
+  height: 60px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: white;
+  color: #f61067;
+  /* text-transform: lowercase; */
+  padding: 0px;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+.termYCon1 {
+  width: 115px;
+  height: 20px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: white;
+  color: #f61067;
+  /* text-transform: lowercase; */
+  padding: 0px;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+.chkW-H{
+  width: 50px;
+  height: 30px;
+  border-radius: 10px;
+  border: solid #f61067;
+}
+/*# sourceMappingURL=style.css.map */
+
+
 .ml {
   margin-left: 25%;
 }
@@ -276,3 +317,4 @@ form .select-loan select {
   text-decoration: none;
   color: white;
 }
+
