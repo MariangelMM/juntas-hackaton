@@ -113,7 +113,6 @@
   @include media(lg) {
     font-size: 22px;
   }
-  
 }
 
 @mixin fontlight {
@@ -163,22 +162,26 @@
   margin-bottom: $margin;
 }
 
-
 /*-------------------------*\
         MEDIA QUERYS
 \*-------------------------*/
 
 @mixin media($media) {
   @if $media == xs {
-    @media (max-width: $breakpoint-sm) { @content; }
-  }
-  @else if $media == sm {
-    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
-  }
-  @else if $media == md {
-    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
-  }
-  @else if $media == lg {
-    @media (min-width: $breakpoint-lg) { @content; }
+    @media (max-width: $breakpoint-sm) {
+      @content;
+    }
+  } @else if $media == sm {
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) {
+      @content;
+    }
+  } @else if $media == md {
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) {
+      @content;
+    }
+  } @else if $media == lg {
+    @media (min-width: $breakpoint-lg) {
+      @content;
+    }
   }
 }
