@@ -1,13 +1,33 @@
+@import "./mixins";
+@import "./variables";
+
 header {
   div {
     display: flex;
     justify-content: space-between;
   }
+    img {
+      /* width: 250px;
+      height: 100px; */
 
-  img {
-    width: 250px;
-    height: 100px;
-  }
+      @include media(xs) {
+        width: 160px;
+        height: 65px;
+      }
+      @include media(sm) {
+        width: 170px;
+        height: 70px;
+      }
+      @include media(md) {
+        width: 200px;
+        height: 95px;
+      }
+      @include media(lg) {
+        width: 250px;
+        height: 100px;
+      }
+    }
+  
 }
 
 .font {
