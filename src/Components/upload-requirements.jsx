@@ -8,7 +8,7 @@ import firebase from '../Firebase/firebase';
 const Requirements = (props) => {
 
     // const {id} = props.match.params
-    console.log('prosp', props.location.data)
+    //console.log('prosp', props.location.data)
 
 
 
