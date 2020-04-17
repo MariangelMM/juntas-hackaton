@@ -12,8 +12,9 @@ const BanksList = ({
 }) => {
 
     return (
-        <div>
-                <table className="table table-striped mr-table">
+        <div className="mr-table">
+            <h3 className="h3ColorFuc">Elige tu mejor opción</h3>
+                <table className="table table-striped ">
                     <thead>
                         <tr className="table-yellow">
                             <td>Banco/Entidad</td>

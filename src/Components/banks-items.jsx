@@ -20,24 +20,29 @@ const BanksItems = (props) => {
         <td>{interes}</td>
         <td>{total}</td>
         <td>
-          <button onClick={event => { handleButtonClickRequest(event); }}>
-            {" "}
-            Ver Requisitos
-            </button>
-          <Link
-            to={{
-              pathname: '/requisitos', state: {
-                name,
-                month: props.month,
-                quota,
-                tcea,
-                total,
-                amountrequest: props.amountRequest,
-              }
-            }}
-            className="btn-yellow-link"
-          >  Solicitar </Link>
-
+          <ul>
+            <li className="td-li">
+              <a href="#" className="aReq" onClick={event => { handleButtonClickRequest(event); }}>
+                {" "}
+                Ver Requisitos
+              </a>
+            </li>
+            <li className="td-li">
+            <Link
+              to={{
+                pathname: '/requisitos', state: {
+                  name,
+                  month: props.month,
+                  quota,
+                  tcea,
+                  total,
+                  amountrequest: props.amountRequest,
+                }
+              }}
+              className="btn-yellow-link"
+            >  Solicitar </Link>
+            </li>
+          </ul>
         </td>
       </tr>
       <tr>

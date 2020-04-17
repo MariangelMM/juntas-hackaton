@@ -44,10 +44,25 @@
   @include  btnyellowlink;
 }
 .ml-1000 {
-  @include alignleft(65%);
+  @include alignleft(78%);
 }
 
 .mr-1000 {
   @include alignright(70%);
 }
+.mb-1000 {
+  @include alignbottom(10%);
+}
 
+.h3ColorFuc {
+  @include h3ColorFuc;
+}
+.mr-table {
+  @include mrtable;
+}
+.aReq {
+  @include aReq;
+}
+.td-li{
+ @include tdli;
+}

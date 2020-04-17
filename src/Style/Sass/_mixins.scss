@@ -9,6 +9,7 @@
   border-radius: 5px;
   background: white;
   margin: 7px;
+  margin-left: 90px;
 }
 
 @mixin btnpink {
@@ -54,11 +55,11 @@
   background-color: #ffd200;
   @include font;
 }
-
-@mixin coloryellow {
-  background-color: #ffd200;
+@mixin mrtable {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
 }
-
 @mixin btnyellow {
   width: 244px;
   height: 60px;
@@ -72,13 +73,14 @@
 @mixin btnyellowlink {
   width: 165px;
   height: 30px;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: bold;
   border-radius: 10px;
   border: solid 0 #000000;
   background-color: #ffd200;
   color: #000000;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 15px;
   margin-top: 10px;
   &:hover {
     text-decoration: none;
@@ -91,6 +93,36 @@
   font-size: 22px;
 }
 
+@mixin h3ColorFuc {
+  width: 434px;
+  height: 30.7px;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #f61067;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+@mixin aReq {
+  width: 157px;
+  height: 24px;
+  font-family: Metropolis;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2d2926;
+}
+@mixin tdli {
+  margin-bottom: 20px;
+  list-style:none;
+}
 @mixin alignleft($margin) {
   margin-left: $margin;
 }
@@ -98,9 +130,6 @@
 @mixin alignright($margin) {
   margin-right: $margin;
 }
-
-@mixin fonttitle {
-  font-family: Metropolis;
-  font-size: 30px;
-  font-weight: bold;
+@mixin alignbottom($margin) {
+  margin-bottom: $margin;
 }
