@@ -22,8 +22,8 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
 
   const handleButtonClick = event => {
     event.preventDefault();
-
     setButtonClicked(true);
+
   };
 
 
@@ -33,18 +33,20 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
       snapshotListenOptions: { includeMetadataChanges: true },
     }
   )
+  const [msjError, setMsjError] = useState('');
 
   const getBanks = () => {
     let filterBanks = [];
     if (amountRequest < 300 || amountRequest > 10000) {
-      alert('no puede :(');
+      setMsjError('Ingrese una cantidad entre 300 y 10000');
+
     }
     else if (amountRequest >= 300 && amountRequest <= 999) {
       filterBanks = value.docs.filter(doc => doc.data().minamount === 300)
     } else if (amountRequest >= 1000 && amountRequest <= 1499) {
       filterBanks = value.docs.filter(doc => doc.data().minamount === 1000)
     } else {
-      filterBanks = value.docs
+      filterBanks = value.docss
     }
     let data = filterBanks.map(doc => doc.data())
     // console.log('map', data)
@@ -64,7 +66,9 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
       return data;
     })
     setBanks(newDataBanks);
+
   }
+
 
   return (
     <div>
@@ -88,20 +92,25 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
             </div>
 
             <div>
-              <label htmlFor="">N° de Cuotas:</label>
-              <select className="input" onChange={numberquotas}>
-                <option value="">Seleciona</option>
+              <label className="ml-3" htmlFor="">Numero de Cuotas:</label>
+              <select className="input ml-i" onChange={numberquotas}>
+                <option value="">Selecciona</option>
                 <option value="6">6</option>
                 <option value="12">12</option>
                 <option value="18">18</option>
                 <option value="24">24</option>
                 <option value="36">36</option>
               </select>
+              <small className="error small-loan">{msjError}</small>
+            </div>
+            <div>
+
             </div>
             <button className="btn-pink ml-1000" onClick={event => { handleButtonClick(event); getBanks() }}> Continuar</button>
           </form>
-          {buttonClicked ? (
-              <BanksList
+          <div>
+            {buttonClicked ? (
+              < BanksList
                 typeDocument={typeDoc}
                 numberDocument={numberDoc}
                 headingDocument={headingDoc}
@@ -109,9 +118,13 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
                 months={month}
                 amountsRequest={amountRequest}
               />
+
             ) : null}
             {}
+
+          </div>
         </div>
+
       )}
     </div >
   );

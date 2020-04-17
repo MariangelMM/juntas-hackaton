@@ -43,7 +43,7 @@ const Home = () => {
                             <h5 className="card-title font-title">Préstamos</h5>
                             <p className="card-text font mb-5">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
                             <Link className="btn-pink-link font" to="/loanstart"
-                            ><strong>SOLICITAR PRESTAMO</strong></Link>
+                            ><strong>SOLICITAR PRÉSTAMO</strong></Link>
                         </div>
                     </div>
                     <div className="col-md-6">
@@ -61,8 +61,8 @@ const Home = () => {
                         <div className="card-body style">
                             <h5 className="card-title font-title">Red de Emprendedorass</h5>
                             <p className="card-text font mb-5">Comparte experiencias, tips y consejos de otras mujeres emprendedoras como tu!.</p>
-                            <Link className="btn-pink-link font" to="/netword"
-                            ><strong>UNIRME A RED DE EMPRENDEDORAS</strong></Link>
+                            <a className="btn-pink-link font" href="https://omairapalacios.github.io/red-social-juntas/src/ "
+                            ><strong>UNIRME A RED DE EMPRENDEDORAS</strong></a>
                         </div>
                     </div>
                 </div>

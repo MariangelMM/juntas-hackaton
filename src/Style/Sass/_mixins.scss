@@ -21,7 +21,7 @@
   margin-top: 4%;
   color: white;
   text-transform: uppercase;
-   margin-top: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
   @include font;
 }
@@ -55,6 +55,14 @@
   background-color: #ffd200;
   @include font;
 }
+@mixin tablepink {
+  font-weight: bold;
+  background-color: #f61067;
+  color: white;
+
+  @include font;
+}
+
 @mixin mrtable {
   margin: 1rem;
   padding: 1rem;
@@ -82,15 +90,22 @@
   text-transform: uppercase;
   padding: 15px;
   margin-top: 10px;
-  &:hover {
-    text-decoration: none;
-    color: #000000;;
-  }
+
   @include font;
 }
 @mixin font {
   font-family: Metropolis;
   font-size: 22px;
+  &:hover {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+@mixin fontlight {
+  font-family: $font-title;
+  font-size: 22px;
+  font-weight: lighter;
 }
 
 @mixin h3ColorFuc {
@@ -121,7 +136,7 @@
 }
 @mixin tdli {
   margin-bottom: 20px;
-  list-style:none;
+  list-style: none;
 }
 @mixin alignleft($margin) {
   margin-left: $margin;

@@ -3,7 +3,6 @@ import { HashRouter, Switch, Route } from "react-router-dom";
 import Home from "./View/home";
 import Loan from "./View/loan";
 import LoanStart from "./Components/loan-start";
-import Network from "./View/network";
 import ImproveCommerce from "./View/improve-commerce";
 import LoanDetail from "./Components/loan-detail";
 import GeneralInformation from "./Components/general-information";
@@ -18,7 +17,6 @@ const Routes = () => {
         <Route exact path="/" component={Home} />
         <Route path="/loanstart" component={LoanStart} />
         <Route path="/loan" component={Loan} />
-        <Route path="/netword" component={Network} />
         <Route path="/mainloan" component={MainLoan} />
         <Route path="/improvecommerce" component={ImproveCommerce} />
         <Route path="/loandetail" component={LoanDetail} />

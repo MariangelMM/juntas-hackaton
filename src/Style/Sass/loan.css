@@ -28,6 +28,7 @@ $FONTS
   border-radius: 5px;
   background: white;
   margin: 7px;
+  margin-left: 90px;
 }
 
 .form-loan div .small-loan {
@@ -38,11 +39,11 @@ $FONTS
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 20%;
+  margin-left: 27%;
 }
 
 .form-loan div .small-loan small {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 form .select-loan {

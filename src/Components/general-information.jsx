@@ -107,7 +107,7 @@ const GeneralInformation = () => {
               </tr>
             </tbody>
           </table>
-          <small>{msgError}</small>
+          <small className="error">{msgError}</small>
         </form>
 
 

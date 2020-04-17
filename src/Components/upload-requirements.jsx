@@ -48,8 +48,8 @@ const Requirements = (props) => {
     }
 
     return (
-        <section>
-             <Header />
+        <section className="font">
+            <Header />
             <img className="img-fluid" src="https://i.imgur.com/9eMjuLW.png" alt="imagen" />
             <h4 className="margintable">Debe Subir los archivos como imagenes</h4>
             <table className="font margintable">
@@ -58,7 +58,7 @@ const Requirements = (props) => {
                         <td>Documento de Identidad</td>
                         <td>{stateFileDoc}</td>
                         <td>
-                            <label htmlFor="upload-doc"><i className="fas fa-plus-circle"></i></label>
+                            <label htmlFor="upload-doc"><i className="fas fa-plus-circle btn-plus"></i></label>
                         </td>
                         <td>
                             <input type='file' className="hide" id="upload-doc" onChange={handleOnChangeDoc} />
@@ -77,7 +77,7 @@ const Requirements = (props) => {
                         <td>Recibo de servicios (luz o agua)</td>
                         <td> {stateFileRe}</td>
                         <td>
-                            <label htmlFor="upload-re"><i className="fas fa-plus-circle"></i></label>
+                            <label htmlFor="upload-re"><i className="fas fa-plus-circle btn-plus"></i></label>
                         </td>
                         <td>
                             <input type='file' className="hide" id="upload-re" onChange={handleOnChangeRe} />
@@ -89,19 +89,19 @@ const Requirements = (props) => {
                         <td>
                             <small>
                                 {stateFileRe !== '' ? (<i className="fas fa-check"></i>) : ''}
-                               
+
                             </small>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <br/>
-           <Link className="btn-pink-link mb-1000 ml-1000"  to={{
+            <br />
+            <Link className="btn-pink-link ml-1000 ml-10 " to={{
                 pathname: "/detaildeposit",
                 propsState,
             }}
             >Continuar</Link>
-            
+
         </section>
     )
 }
