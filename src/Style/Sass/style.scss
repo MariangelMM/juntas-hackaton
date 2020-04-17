@@ -1,6 +1,7 @@
 @import "./home.scss";
 @import "./variables";
 @import "./loan";
+@import "./loan-start";
 @import "./mixins";
 * {
   margin: 0px;
@@ -44,13 +45,23 @@
 }
 .ml-1000 {
   @include alignleft(65%);
+  @include media(xs) {
+    @include alignright(5%);
+  }
 }
 
 .mr-1000 {
   @include alignright(70%);
+
+  @include media(xs) {
+    @include alignright(5%);
+  }
 }
 .mb-1000 {
   @include alignbottom(10%);
+  @include media(xs) {
+    @include alignright(1%);
+  }
 }
 
 .h3ColorFuc {

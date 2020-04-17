@@ -53,6 +53,27 @@ header img {
 @media (min-width: 1360px) {
   header img {
     width: 250px;
+    height: 120px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  header {
+    width: 170px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  header {
+    width: 200px;
+    height: 95px;
+  }
+}
+
+@media (min-width: 1360px) {
+  header {
+    width: 250px;
     height: 100px;
   }
 }
@@ -70,6 +91,14 @@ header img {
   margin-left: 217px;
   margin-top: 50px;
   width: 1026px;
+}
+
+@media (max-width: 767px) {
+  .margintable {
+    width: 300px;
+    margin-left: 2px;
+    margin-top: 10px;
+  }
 }
 
 .style {

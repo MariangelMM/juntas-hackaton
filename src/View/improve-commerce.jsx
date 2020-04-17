@@ -21,7 +21,7 @@ const ImproveCommerce = () => {
                 <h1 >En <strong>Juntas</strong> nos importas TU. <br /> Por ello recopilamos los mejores cursos para <br /> desarrollar tus habilidades, conocimientos y hacer <br /> crecer tu negocio</h1>
             </div>
             <div>
-                <h2 className="font m-5">Finanzas</h2>
+                <h2 className="font-title m-5">Finanzas</h2>
                 <div class="card-group m-4">
                     <div class="card m-3">
                         <img src={img1} class="card-img-top " alt="..." />
@@ -51,7 +51,7 @@ const ImproveCommerce = () => {
             </div>
 
             <div>
-                <h2 className="font m-5">Ventas</h2>
+                <h2 className="font-title m-5">Ventas</h2>
                 <div class="card-group m-4">
                     <div class="card m-3">
                         <img src={img4} class="card-img-top" alt="..." />
@@ -83,7 +83,7 @@ const ImproveCommerce = () => {
             </div>
 
             <div>
-                <h2 className="font m-5">Desarrollo Personal</h2>
+                <h2 className="font-title m-5">Desarrollo Personal</h2>
                 <div class="card-group m-4">
                     <div class="card m-3">
                         <img src={img7} class="card-img-top" alt="..." />

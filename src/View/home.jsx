@@ -14,7 +14,7 @@ const Home = () => {
             </div>
 
             <div id="carouselExampleSlidesOnly" className="carousel slide  " data-ride="carousel">
-                <div className="carousel-inner carousel-juntas">
+                <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src="https://i.imgur.com/gGxAYPo.png " className="d-block w-100" alt="imagen" />
                         <div className="carousel-caption d-none d-md-block">
@@ -33,15 +33,15 @@ const Home = () => {
                 </div>
             </div>
             <div className="font text-center m-5">
-                <h2 className="font" >Somos una plataforma que ofrece servicios para ayudar al <br />crecimiento de la mujeres emprendedoras.</h2>
+                <h2 className="font " >Somos una plataforma que ofrece servicios para ayudar al <br />crecimiento de la mujeres emprendedoras.</h2>
                 <h1 className="m-4 font"><strong>Nuestros Servicios</strong></h1>
             </div>
             <div className="card mb-3 style">
                 <div className="row no-gutters color-yellow ">
                     <div className="col-sm-6">
-                        <div className="card-body style">
+                        <div className="card-body style m-5">
                             <h5 className="card-title font-title">Préstamos</h5>
-                            <p className="card-text font">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
+                            <p className="card-text font ">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
                             <Link className="btn-pink-link font" to="/loanstart"
                             ><strong>SOLICITAR PRÉSTAMO</strong></Link>
                         </div>
@@ -58,7 +58,7 @@ const Home = () => {
                         <img src={img2} className="card-img" alt="imagen" />
                     </div>
                     <div className="col-md-6">
-                        <div className="card-body style">
+                        <div className="card-body style m-5">
                             <h5 className="card-title font-title">Red de Emprendedorass</h5>
                             <p className="card-text font mb-5">Comparte experiencias, tips y consejos de otras mujeres emprendedoras como tu!.</p>
                             <a className="btn-pink-link font" href="https://omairapalacios.github.io/red-social-juntas/src/ "
@@ -71,7 +71,7 @@ const Home = () => {
             <div className="card mb-3 style">
                 <div className="row no-gutters color-yellow ">
                     <div className="col-md-6">
-                        <div className="card-body style">
+                        <div className="card-body style m-5">
                             <h5 className="card-title font-title">Mejor tu Negocio</h5>
                             <p className="card-text  font mb-5">Aprende todo lo que necesitas para hacer crecer tu negocio a través de cursos y talleres que hemos recopilado para ti.</p>
                             <Link className="btn-pink-link font " to="/improvecommerce"
