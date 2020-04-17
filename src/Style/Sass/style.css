@@ -1,3 +1,20 @@
+/*-------------------------*\
+        MEDIA QUERYS
+\*-------------------------*/
+/*-------------------------*\
+$COLORS
+\*-------------------------*/
+/*-------------------------*\
+$FONTS
+\*-------------------------*/
+@font-face {
+  font-family: Metropolis;
+  src: url("../Font/Metropolis Font family/Metropolis-Medium.otf");
+}
+
+/*-------------------------*\
+        $SCREENS
+\*-------------------------*/
 header div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,8 +25,36 @@ header div {
 }
 
 header img {
-  width: 250px;
-  height: 100px;
+  /* width: 250px;
+      height: 100px; */
+}
+
+@media (max-width: 767px) {
+  header img {
+    width: 160px;
+    height: 65px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  header img {
+    width: 170px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  header img {
+    width: 200px;
+    height: 95px;
+  }
+}
+
+@media (min-width: 1360px) {
+  header img {
+    width: 250px;
+    height: 100px;
+  }
 }
 
 .font {
@@ -25,10 +70,6 @@ header img {
   margin-left: 217px;
   margin-top: 50px;
   width: 1026px;
-}
-
-.carousel-juntas {
-  height: 500px;
 }
 
 .style {
@@ -137,30 +178,6 @@ form .select-loan select {
   color: #000000;
 }
 
-@media (max-width: 767px) {
-  .font {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .font {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .font {
-    font-size: 19px;
-  }
-}
-
-@media (min-width: 1360px) {
-  .font {
-    font-size: 22px;
-  }
-}
-
 .font-light {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
@@ -187,30 +204,6 @@ form .select-loan select {
   color: #000000;
 }
 
-@media (max-width: 767px) {
-  .btn-pink {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .btn-pink {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .btn-pink {
-    font-size: 19px;
-  }
-}
-
-@media (min-width: 1360px) {
-  .btn-pink {
-    font-size: 22px;
-  }
-}
-
 .btn-pink-link {
   width: 244px;
   height: 60px;
@@ -232,30 +225,6 @@ form .select-loan select {
 .btn-pink-link:hover {
   text-decoration: none;
   color: #000000;
-}
-
-@media (max-width: 767px) {
-  .btn-pink-link {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .btn-pink-link {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .btn-pink-link {
-    font-size: 19px;
-  }
-}
-
-@media (min-width: 1360px) {
-  .btn-pink-link {
-    font-size: 22px;
-  }
 }
 
 .btn-yellow {
@@ -299,30 +268,6 @@ form .select-loan select {
   color: #000000;
 }
 
-@media (max-width: 767px) {
-  .table-yellow {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .table-yellow {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .table-yellow {
-    font-size: 19px;
-  }
-}
-
-@media (min-width: 1360px) {
-  .table-yellow {
-    font-size: 22px;
-  }
-}
-
 .table-pink {
   font-weight: bold;
   background-color: #f61067;
@@ -334,30 +279,6 @@ form .select-loan select {
 .table-pink:hover {
   text-decoration: none;
   color: #000000;
-}
-
-@media (max-width: 767px) {
-  .table-pink {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .table-pink {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .table-pink {
-    font-size: 19px;
-  }
-}
-
-@media (min-width: 1360px) {
-  .table-pink {
-    font-size: 22px;
-  }
 }
 
 .btn-yellow-link {
@@ -379,30 +300,6 @@ form .select-loan select {
 .btn-yellow-link:hover {
   text-decoration: none;
   color: #000000;
-}
-
-@media (max-width: 767px) {
-  .btn-yellow-link {
-    font-size: 15px;
-  }
-}
-
-@media (min-width: 767px) and (max-width: 1023px) {
-  .btn-yellow-link {
-    font-size: 17px;
-  }
-}
-
-@media (min-width: 1023px) and (max-width: 1360px) {
-  .btn-yellow-link {
-    font-size: 19px;
-  }
-}
-
-@media (min-width: 1360px) {
-  .btn-yellow-link {
-    font-size: 22px;
-  }
 }
 
 .ml-1000 {

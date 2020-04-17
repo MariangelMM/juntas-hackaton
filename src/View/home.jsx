@@ -41,7 +41,7 @@ const Home = () => {
                     <div className="col-md-6">
                         <div className="card-body style">
                             <h5 className="card-title font-title">Préstamos</h5>
-                            <p className="card-text font mb-5">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
+                            <p className="card-text mb-5">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
                             <Link className="btn-pink-link font" to="/loanstart"
                             ><strong>SOLICITAR PRÉSTAMO</strong></Link>
                         </div>

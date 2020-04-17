@@ -1,3 +1,20 @@
+/*-------------------------*\
+        MEDIA QUERYS
+\*-------------------------*/
+/*-------------------------*\
+$COLORS
+\*-------------------------*/
+/*-------------------------*\
+$FONTS
+\*-------------------------*/
+@font-face {
+  font-family: Metropolis;
+  src: url("../Font/Metropolis Font family/Metropolis-Medium.otf");
+}
+
+/*-------------------------*\
+        $SCREENS
+\*-------------------------*/
 header div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,8 +25,36 @@ header div {
 }
 
 header img {
-  width: 250px;
-  height: 100px;
+  /* width: 250px;
+      height: 100px; */
+}
+
+@media (max-width: 767px) {
+  header img {
+    width: 160px;
+    height: 65px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  header img {
+    width: 170px;
+    height: 70px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  header img {
+    width: 200px;
+    height: 95px;
+  }
+}
+
+@media (min-width: 1360px) {
+  header img {
+    width: 250px;
+    height: 100px;
+  }
 }
 
 .font {
@@ -25,10 +70,6 @@ header img {
   margin-left: 217px;
   margin-top: 50px;
   width: 1026px;
-}
-
-.carousel-juntas {
-  height: 500px;
 }
 
 .style {
