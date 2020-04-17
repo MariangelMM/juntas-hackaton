@@ -33,8 +33,8 @@ const Home = () => {
                 </div>
             </div>
             <div className="font text-center m-5">
-                <h2 >Somos una plataforma que ofrece servicios para ayudar al <br />crecimiento de la mujeres emprendedoras.</h2>
-                <h1 className="m-4"><strong>Nuestros Servicios</strong></h1>
+                <h2 className="font" >Somos una plataforma que ofrece servicios para ayudar al <br />crecimiento de la mujeres emprendedoras.</h2>
+                <h1 className="m-4 font"><strong>Nuestros Servicios</strong></h1>
             </div>
             <div className="card mb-3 style">
                 <div className="row no-gutters color-yellow ">
