@@ -36,7 +36,6 @@ const BanksItems = (props) => {
               }
             }}
           >  Solicitar </Link>
-
         </td>
       </tr>
       <tr>
