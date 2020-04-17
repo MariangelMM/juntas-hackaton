@@ -25,6 +25,9 @@ $FONTS
   margin-left: 15px;
   width: 338px;
   height: 40px;
+  border-radius: 5px;
+  background: white;
+  margin: 7px;
 }
 
 .form-loan div .small-loan {

@@ -11,9 +11,13 @@ const Requirements = (props) => {
     console.log('prospss', props.location.state);
 
 
+    const propsState = props.location.state;
+
     const [state, setState] = useState();
     const [stateFileDoc, setStateFileDoc] = useState('');
     const [stateFileRe, setStateFileRe] = useState('');
+
+
 
 
     const handleOnChangeDoc = (e) => {
@@ -51,46 +55,51 @@ const Requirements = (props) => {
             <img src="https://i.imgur.com/9eMjuLW.png" alt="imagen" />
             <h4 className="margintable">Debe Subir los archivos como imagenes</h4>
             <table className="font margintable">
-                <tr className="row-yellow">
-                    <td>Documento de Identidad</td>
-                    <td>
-                        <label htmlFor="upload-doc"><i className="fas fa-plus-circle"></i></label>
-                    </td>
-                    <td>
-                        <input type='file' className="hide" id="upload-doc" onChange={handleOnChangeDoc} />
-                    </td>
-                    <td>
-                        <button htmlFor="upload-doc" onClick={() => { setStateFileDoc('') }}><i className="fas fa-trash-alt"></i></button>
-                    </td>
-                    <td>
-                        <small>
-                            {stateFileDoc !== '' ? (<i className="fas fa-check"></i>) : ''}
-                            {stateFileDoc}</small>
-                    </td>
+                <tbody>
+                    <tr className="row-yellow">
+                        <td>Documento de Identidad</td>
+                        <td>
+                            <label htmlFor="upload-doc"><i className="fas fa-plus-circle"></i></label>
+                        </td>
+                        <td>
+                            <input type='file' className="hide" id="upload-doc" onChange={handleOnChangeDoc} />
+                        </td>
+                        <td>
+                            <button htmlFor="upload-doc" onClick={() => { setStateFileDoc('') }}><i className="fas fa-trash-alt"></i></button>
+                        </td>
+                        <td>
+                            <small>
+                                {stateFileDoc !== '' ? (<i className="fas fa-check"></i>) : ''}
+                                {stateFileDoc}</small>
+                        </td>
 
-                </tr>
-                <tr> <br /></tr>
-                <tr className="row-yellow">
-                    <td>Recibo de servicios (luz o agua)</td>
-                    <td>
-                        <label htmlFor="upload-re"><i className="fas fa-plus-circle"></i></label>
-                    </td>
-                    <td>
-                        <input type='file' className="hide" id="upload-re" onChange={handleOnChangeRe} />
-                    </td>
-                    <td>
-                        <button htmlFor="upload-re" onClick={() => { setStateFileRe('') }}><i className="fas fa-trash-alt"></i></button>
+                    </tr>
+                    <tr className="row-yellow">
+                        <td>Recibo de servicios (luz o agua)</td>
+                        <td>
+                            <label htmlFor="upload-re"><i className="fas fa-plus-circle"></i></label>
+                        </td>
+                        <td>
+                            <input type='file' className="hide" id="upload-re" onChange={handleOnChangeRe} />
+                        </td>
+                        <td>
+                            <button htmlFor="upload-re" onClick={() => { setStateFileRe('') }}><i className="fas fa-trash-alt"></i></button>
 
-                    </td>
-                    <td>
-                        <small>
-                            {stateFileRe !== '' ? (<i className="fas fa-check"></i>) : ''}
-                            {stateFileRe}
-                        </small>
-                    </td>
-                </tr>
+                        </td>
+                        <td>
+                            <small>
+                                {stateFileRe !== '' ? (<i className="fas fa-check"></i>) : ''}
+                                {stateFileRe}
+                            </small>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
-            <Link className="btn-pink-link" to="/detaildeposit">Continuar</Link>
+            <Link className="btn-pink-link" to={{
+                pathname: "/detaildeposit",
+                propsState,
+            }}
+            >Continuar</Link>
         </section>
     )
 }

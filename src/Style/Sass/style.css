@@ -69,6 +69,9 @@ $FONTS
   margin-left: 15px;
   width: 338px;
   height: 40px;
+  border-radius: 5px;
+  background: white;
+  margin: 7px;
 }
 
 .form-loan div .small-loan {
@@ -135,6 +138,11 @@ form .select-loan select {
   font-size: 22px;
 }
 
+.btn-pink-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .btn-yellow {
   width: 244px;
   height: 60px;
@@ -149,6 +157,9 @@ form .select-loan select {
 .input {
   width: 338px;
   height: 40px;
+  border-radius: 5px;
+  background: white;
+  margin: 7px;
 }
 
 .row-yellow {
@@ -156,6 +167,7 @@ form .select-loan select {
   height: 61px;
   background-color: #ffd200;
   margin-bottom: 50px;
+  border: 10px solid white;
 }
 
 .ml-1000 {
