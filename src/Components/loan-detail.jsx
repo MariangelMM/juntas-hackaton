@@ -9,7 +9,7 @@ const LoanDetail = (props) => {
     return (
         <div>
             <div>
-                <h2>¡Haz completado exitosamente tu solicitud de prestamo!</h2>
+                <h2>¡Haz completado exitosamente tu solicitud de préstamo!</h2>
                 <i className="fas fa-check"></i>
                 <h4>
                     Detro de las siguientes 24 horas se contactara un ejecutivo para
@@ -17,12 +17,12 @@ const LoanDetail = (props) => {
         </h4>
             </div>
             <h4>
-                A continuacion te brindamos la informacion de tu detalle de pretamo
+                A continuacion te brindamos la informacion de tu detalle de préstamo
       </h4>
             <table>
                 <thead>
                     <tr>
-                        <td>Detalle del Prestamo</td>
+                        <td>Detalle del Préstamo</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -31,7 +31,7 @@ const LoanDetail = (props) => {
                         <td>{name}</td>
                     </tr>
                     <tr>
-                        <td>Moneda de Credito</td>
+                        <td>Moneda de Crédito</td>
                         <td>Soles</td>
                     </tr>
                     <tr>

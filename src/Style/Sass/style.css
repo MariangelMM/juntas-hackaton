@@ -23,7 +23,7 @@ header img {
 
 .margintable {
   margin-left: 217px;
-  margin-top: 50px;
+  margin-top: 10px;
   width: 1026px;
 }
 
@@ -188,10 +188,17 @@ form .select-loan select {
 }
 
 .ml-1000 {
-  margin-left: 70%;
+  margin-left: 78%;
 }
 
 .mr-1000 {
   margin-right: 70%;
+}
+.mb-1000 {
+  margin-bottom: 10%;
+}
+.btnColorTrash {
+  background-color: #ffd200;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
