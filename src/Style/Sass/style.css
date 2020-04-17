@@ -17,6 +17,10 @@ header img {
   font-size: 22px;
 }
 
+.td-li{
+  margin-bottom: 20px;
+  list-style:none;
+}
 .imagen {
   width: 200px;
 }
@@ -136,6 +140,8 @@ form .select-loan select {
   text-transform: uppercase;
   font-family: Metropolis;
   font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .btn-pink-link {
@@ -167,6 +173,25 @@ form .select-loan select {
   color: #000000;
 }
 
+.btn-yellow-link {
+  width: 165px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 7px;
+  border: solid 0 #000000;
+  background-color: #ffd200;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-top: 10px;
+  font-family: Metropolis;
+  font-size: 20px;
+}
+.btn-yellow-link:hover {
+  text-decoration: none;
+  color: #000000;
+}
 .color-yellow {
   background-color: #ffd200;
 }
@@ -177,6 +202,7 @@ form .select-loan select {
   border-radius: 5px;
   background: white;
   margin: 7px;
+  margin-left: 90px;
 }
 
 .row-yellow {
@@ -187,6 +213,18 @@ form .select-loan select {
   border: 10px solid white;
 }
 
+.table-yellow {
+  font-weight: bold;
+  background-color: #ffd200;
+  font-family: Metropolis;
+  font-size: 20px;
+}
+.mr-table {
+  margin: 1rem;
+  padding: 1rem;
+  /* IMPORTANTE */
+  text-align: center;
+}
 .ml-1000 {
   margin-left: 78%;
 }
@@ -202,6 +240,34 @@ form .select-loan select {
   border: none;
 }
 
+.h3ColorFuc {
+  width: 434px;
+  height: 30.7px;
+  font-family: Montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #f61067;
+  margin-left: 35%;
+  margin-bottom: 20px;
+}
+
+.aReq {
+  width: 157px;
+  height: 24px;
+  font-family: Metropolis;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #2d2926;
+}
+/*# sourceMappingURL=style.css.map */
 .centerH4 {
   margin-top: 15%;
   text-align: center;
@@ -241,7 +307,7 @@ form .select-loan select {
   border: solid #f61067;
 }
 /*# sourceMappingURL=style.css.map */
-=======
+
 
 .ml {
   margin-left: 25%;

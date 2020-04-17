@@ -12,17 +12,18 @@ const BanksList = ({
 }) => {
 
     return (
-        <div>
-            <section>
-                <table>
+        <div className="mr-table">
+            <h3 className="h3ColorFuc">Elige tu mejor opción</h3>
+                <table className="table table-striped ">
                     <thead>
-                        <tr>
+                        <tr className="table-yellow">
                             <td>Banco/Entidad</td>
-                            <td>Numero de Cuotas</td>
-                            <td>Cuota Mensual</td>
+                            <td>Cuota mensual</td>
+                            <td>N° de Cuotas</td>
                             <td>TCEA</td>
-                            <td>Intereses</td>
+                            <td>Interés</td>
                             <td>Monto Total</td>
+                            <td>Más informacion</td>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,7 +38,6 @@ const BanksList = ({
                         ))}
                     </tbody>
                 </table>
-            </section>
         </div>
     );
 };
