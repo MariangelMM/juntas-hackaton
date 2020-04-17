@@ -9,6 +9,7 @@ import LoanDetail from "./Components/loan-detail";
 import GeneralInformation from "./Components/general-information";
 import Requirements from "./Components/upload-requirements";
 import DetailDeposit from "./Components/detail-deposit";
+import MainLoan from "./Components/loan";
 
 const Routes = () => {
   return (
@@ -18,6 +19,7 @@ const Routes = () => {
         <Route path="/loanstart" component={LoanStart} />
         <Route path="/loan" component={Loan} />
         <Route path="/netword" component={Network} />
+        <Route path="/mainloan" component={MainLoan} />
         <Route path="/improvecommerce" component={ImproveCommerce} />
         <Route path="/loandetail" component={LoanDetail} />
         <Route path="/generalinformation" component={GeneralInformation} />

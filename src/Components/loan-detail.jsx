@@ -1,4 +1,5 @@
 import React from "react";
+import Header from "./header";
 
 const LoanDetail = (props) => {
 
@@ -8,6 +9,7 @@ const LoanDetail = (props) => {
 
     return (
         <div>
+            <Header />
             <div>
                 <h2>¡Haz completado exitosamente tu solicitud de préstamo!</h2>
                 <i className="fas fa-check"></i>
