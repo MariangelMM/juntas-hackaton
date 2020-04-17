@@ -38,15 +38,15 @@ const Home = () => {
             </div>
             <div className="card mb-3 style">
                 <div className="row no-gutters color-yellow ">
-                    <div className="col-md-6">
+                    <div className="col-sm-6">
                         <div className="card-body style">
                             <h5 className="card-title font-title">Préstamos</h5>
-                            <p className="card-text mb-5">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
+                            <p className="card-text font">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
                             <Link className="btn-pink-link font" to="/loanstart"
                             ><strong>SOLICITAR PRÉSTAMO</strong></Link>
                         </div>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-sm-6">
                         <img src={img1} className="card-img" alt="imagen" />
                     </div>
                 </div>
