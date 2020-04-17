@@ -31,6 +31,13 @@ header img {
   height: 500px;
 }
 
+.style {
+  margin: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*-------------------------*\
 $COLORS
 \*-------------------------*/
@@ -112,6 +119,12 @@ form .select-loan select {
   font-size: 22px;
 }
 
+.font-title {
+  font-family: Metropolis;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .btn-pink {
   width: 244px;
   height: 60px;
@@ -152,6 +165,10 @@ form .select-loan select {
   border: solid 0 #000000;
   text-align: center;
   color: #000000;
+}
+
+.color-yellow {
+  background-color: #ffd200;
 }
 
 .input {
