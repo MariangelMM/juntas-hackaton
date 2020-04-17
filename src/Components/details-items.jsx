@@ -3,13 +3,11 @@ import React from 'react';
 const DetailsItems = () => {
     return (
         <React.Fragment >
-            <p>
+            <th>
                 * Documento de Identidad(DNI , Pasaporte, C.E)
-            </p>
-            <p>
+<br />
                 * Recibo de Servivio(Luz o Agua)
-            </p>
-
+                </th>
         </React.Fragment >
     )
 

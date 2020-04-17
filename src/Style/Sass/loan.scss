@@ -1,0 +1,36 @@
+@import "./variables";
+@import "./mixins";
+
+.form-loan {
+  margin-left: 15%;
+  font-family: $font-title;
+  font-size: 22px;
+  div {
+    div {
+      display: flex;
+      input {
+        margin-left: 15px;
+        @include input;
+      }
+    }
+    .small-loan {
+      @include col-juntas;
+      margin-left: 20%;
+      small {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+form {
+  .select-loan {
+    display: flex;
+    margin-left: 20%;
+    background-color: green;
+    select {
+      background-color: firebrick;
+      color: hotpink;
+    }
+  }
+}

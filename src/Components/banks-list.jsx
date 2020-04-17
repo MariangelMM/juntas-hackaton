@@ -26,6 +26,7 @@ const BanksList = ({
                         </tr>
                     </thead>
                     <tbody>
+
                         {bank.map(element => (
                             <BanksItems
                                 getsBanks={element}

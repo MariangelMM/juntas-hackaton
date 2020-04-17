@@ -1,0 +1,75 @@
+@mixin col-juntas {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin input {
+  width: 338px;
+  height: 40px;
+  border-radius: 5px;
+  background: white;
+  margin: 7px;
+}
+
+@mixin btnpink {
+  width: 244px;
+  height: 60px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #f61067;
+  margin-top: 4%;
+  color: white;
+  text-transform: uppercase;
+  @include font;
+}
+
+@mixin btnpinklink {
+  width: 244px;
+  height: 60px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #f61067;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  &:hover {
+    text-decoration: none;
+    color: white;
+  }
+  @include font;
+}
+
+@mixin rowyellow {
+  width: 1026px;
+  height: 61px;
+  background-color: #ffd200;
+  margin-bottom: 50px;
+  border: 10px solid white;
+}
+
+@mixin btnyellow {
+  width: 244px;
+  height: 60px;
+  background-color: #ffd200;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  text-align: center;
+  color: #000000;
+}
+
+@mixin font {
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+@mixin alignleft($margin) {
+  margin-left: $margin;
+}
+
+@mixin alignright($margin) {
+  margin-right: $margin;
+}
+@mixin alignbottom($margin) {
+  margin-bottom: $margin;
+}
