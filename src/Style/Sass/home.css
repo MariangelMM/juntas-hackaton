@@ -30,4 +30,11 @@ header img {
 .carousel-juntas {
   height: 500px;
 }
+
+.style {
+  margin: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=home.css.map */

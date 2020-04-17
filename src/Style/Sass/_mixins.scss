@@ -54,6 +54,11 @@
   background-color: #ffd200;
   @include font;
 }
+
+@mixin coloryellow {
+  background-color: #ffd200;
+}
+
 @mixin btnyellow {
   width: 244px;
   height: 60px;
@@ -92,4 +97,10 @@
 
 @mixin alignright($margin) {
   margin-right: $margin;
+}
+
+@mixin fonttitle {
+  font-family: Metropolis;
+  font-size: 30px;
+  font-weight: bold;
 }

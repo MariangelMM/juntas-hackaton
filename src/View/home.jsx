@@ -1,6 +1,11 @@
 import React from 'react';
 import Header from '../Components/header';
 
+import { Link } from 'react-router-dom';
+import img1 from '../Style/Img/img1.jpg';
+import img2 from '../Style/Img/img2.jpg';
+import img3 from '../Style/Img/img3.jpg';
+
 const Home = () => {
     return (
         <div>
@@ -27,6 +32,58 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <div className="font text-center m-5">
+                <h2 >Somos una plataforma que ofrece servicios para ayudar al <br />crecimiento de la mujeres emprendedoras.</h2>
+                <h1 className="m-4"><strong>Nuestros Servicios</strong></h1>
+            </div>
+            <div class="card mb-3 style">
+                <div class="row no-gutters color-yellow ">
+                    <div class="col-md-6">
+                        <div class="card-body style">
+                            <h5 class="card-title font-title">Préstamos</h5>
+                            <p class="card-text font mb-5">Encuentra el préstamo que se adecue más a tus necesidades, compara tasas entre bancos y solicítalos en solo 4 pasos!.</p>
+                            <Link className="btn-pink-link font" to="/mainloan"
+                            ><strong>SOLICITAR PRESTAMO</strong></Link>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src={img1} class="card-img" alt="imagen" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 style">
+                <div class="row no-gutters color-yellow ">
+                    <div class="col-md-6">
+                        <img src={img2} class="card-img" alt="imagen" />
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card-body style">
+                            <h5 class="card-title font-title">Red de Emprendedorass</h5>
+                            <p class="card-text font mb-5">Comparte experiencias, tips y consejos de otras mujeres emprendedoras como tu!.</p>
+                            <Link className="btn-pink-link font" to="/netword"
+                            ><strong>UNIRME A RED DE EMPRENDEDORAS</strong></Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 style">
+                <div class="row no-gutters color-yellow ">
+                    <div class="col-md-6">
+                        <div class="card-body style">
+                            <h5 class="card-title font-title">Mejor tu Negocio</h5>
+                            <p class="card-text  font mb-5">Aprende todo lo que necesitas para hacer crecer tu negocio a través de cursos y talleres que hemos recopilado para ti.</p>
+                            <Link className="btn-pink-link font " to="/improvecommerce"
+                            ><strong>MEJORAR MI NEGOCIO</strong></Link>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img src={img3} class="card-img" alt="imagen" />
+                    </div>
+                </div>
+            </div>
+
         </div>
     )
 
