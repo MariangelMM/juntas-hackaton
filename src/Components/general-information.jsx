@@ -61,7 +61,7 @@ const GeneralInformation = () => {
           alt="imagen"
         />
         <form >
-          <table className="font margintable">
+          <table className="font margintable table-responsive-sm table-responsive-md">
             <tbody>
               <tr>
                 <td>

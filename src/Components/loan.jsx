@@ -81,7 +81,7 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
           <form className="form-loan">
             <div className="form-group">
               <div>
-                <label htmlFor="">Monto Solicitado (S/)</label>
+                <label className ="font" htmlFor="">Monto Solicitado (S/)</label>
                 <input className="" type="text" onChange={handleAmountRequest} placeholder="Escribe el Monto" />
               </div>
               <div className="small-loan">
@@ -92,7 +92,7 @@ const MainLoan = ({ typeDoc, numberDoc, headingDoc }) => {
             </div>
 
             <div>
-              <label className="ml-3" htmlFor="">Numero de Cuotas:</label>
+              <label className="ml-3 font" htmlFor="">Numero de Cuotas:</label>
               <select className="input ml-i" onChange={numberquotas}>
                 <option value="">Selecciona</option>
                 <option value="6">6</option>
