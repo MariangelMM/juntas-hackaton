@@ -14,7 +14,7 @@ const Header = () => {
                     <div className="navbar-nav font">
                         <Link className="nav-item nav-link active m-3 text-center font" to="/">Inicio <span className="sr-only">(current)</span></Link>
                         <Link className="nav-item nav-link active m-3 btn-yellow text-center font " to="/loanstart">Préstamos</Link>
-                        <Link className="nav-item nav-link active m-3 text-center font" to="/netword">Red de <br /> Emprendedoras</Link>
+                        <a className="nav-item nav-link active m-3 text-center font" href="https://omairapalacios.github.io/red-social-juntas/src/ ">Red de <br /> Emprendedoras</a>
                         <Link className="nav-item nav-link active m-3 text-center font" to="/improvecommerce">Mejora tu <br /> Negocio</Link>
                     </div>
                 </div>

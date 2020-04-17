@@ -215,6 +215,19 @@ form .select-loan select {
   color: #000000;
 }
 
+.table-pink {
+  font-weight: bold;
+  background-color: #f61067;
+  color: white;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.table-pink:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
 .btn-yellow-link {
   width: 165px;
   height: 30px;
@@ -342,6 +355,12 @@ form .select-loan select {
   color: white;
   border: 3px solid #c5165b;
   margin-right: 7px;
+}
+
+.main-detail {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .detail {

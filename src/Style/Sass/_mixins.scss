@@ -55,6 +55,14 @@
   background-color: #ffd200;
   @include font;
 }
+@mixin tablepink {
+  font-weight: bold;
+  background-color: #f61067;
+  color: white;
+
+  @include font;
+}
+
 @mixin mrtable {
   margin: 1rem;
   padding: 1rem;

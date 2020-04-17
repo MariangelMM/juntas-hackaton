@@ -39,7 +39,7 @@ const LoanStart = () => {
 
                         <div id="collapseOne" className="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div className="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Un préstamo es una operación financiera por la cual una persona (prestamista) otorga mediante un contrato o acuerdo entre las partes, un activo (normalmente una cantidad de dinero) a otra persona (prestatario), a cambio de la obtención de un interés (precio del dinero).
                              </div>
                         </div>
                     </div>
@@ -52,7 +52,8 @@ const LoanStart = () => {
                         </div>
                         <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                             <div className="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                La TEA es la tasa efectiva anual, y la TCEA es la Tasa de Costo Efectivo Anual.
+                                La TEA es la tasa por el dinero que la entidad financiera le va a prestar, pero además de esa tasa la empresa le va a cobrar gastos adicionales, como por ejemplo, comisiones. Si incluye estos gastos adicionales en la tasa, entonces usted tendrá la TCEA.
                             </div>
                         </div>
                     </div>
@@ -65,14 +66,14 @@ const LoanStart = () => {
                         </div>
                         <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div className="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                Los requisitos son Documento de Identidad y recibo de luz o agua.
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="m-5">
-                <Link className="font ml-5 text-pink">Ver más información sobre Finanzas</Link>
+                <a href=" https://www.sbs.gob.pe/educacion-financiera/finanzas-para-ti#ft4167" className="font ml-5 text-pink">Ver más información sobre Finanzas</a>
             </div>
             <div className="color-yellow text-center mt-4 font ">
                 <h2 className="pt-4">¿Aún tienen dudas?</h2>

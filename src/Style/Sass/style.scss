@@ -36,6 +36,9 @@
 .table-yellow {
   @include tableyellow;
 }
+.table-pink {
+  @include tablepink;
+}
 .btn-yellow-link {
   @include btnyellowlink;
 }
@@ -115,6 +118,9 @@
   color: white;
   border: 3px solid #c5165b;
   margin-right: 7px;
+}
+.main-detail {
+  justify-content: center;
 }
 
 .detail {
