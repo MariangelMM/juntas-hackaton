@@ -12,7 +12,7 @@ const BanksItems = (props) => {
   };
   return (
     <React.Fragment >
-      <tr>
+      <tr className="bg-white font border border-warning">
         <td><img src={image} className="imagen img-fluid" alt="banco" /></td>
         <td>{quota}</td>
         <td>{props.month}</td>
@@ -28,19 +28,19 @@ const BanksItems = (props) => {
               </a>
             </li>
             <li className="td-li">
-            <Link
-              to={{
-                pathname: '/requisitos', state: {
-                  name,
-                  month: props.month,
-                  quota,
-                  tcea,
-                  total,
-                  amountrequest: props.amountRequest,
-                }
-              }}
-              className="btn-yellow-link"
-            >  Solicitar </Link>
+              <Link
+                to={{
+                  pathname: '/requisitos', state: {
+                    name,
+                    month: props.month,
+                    quota,
+                    tcea,
+                    total,
+                    amountrequest: props.amountRequest,
+                  }
+                }}
+                className="btn-yellow-link"
+              >  Solicitar </Link>
             </li>
           </ul>
         </td>

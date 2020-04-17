@@ -14,18 +14,18 @@ const LoanDetail = (props) => {
   } = props.location.propsState;
 
   return (
-    <div>
+    <div className="mainlitain">
       <Header />
-      <div>
-        <h2>¡Haz completado exitosamente tu solicitud de prestamo!</h2>
+      <div className="detail font m-3 text-center">
+        <h2>¡Haz completado exitosamente tu solicitud de préstamo!</h2>
         <i className="fas fa-check"></i>
         <h4>
-          Detro de las siguientes 24 horas se contactara un ejecutivo para
-          informarte sobre el resultado de tu solicitud de prestamo
+          Detro de las siguientes 24 horas se contactará un ejecutivo para
+          informarte sobre el resultado de tu solicitud de préstamo.
         </h4>
       </div>
       <h4>
-        A continuacion te brindamos la informacion de tu detalle de pretamo
+        A continuación te brindamos la información de tu detalle de préstamo.
       </h4>
       <table>
         <thead>
@@ -66,20 +66,20 @@ const LoanDetail = (props) => {
       </table>
       <div className="container">
         <PDFDownloadLink
-          document={<DocumentLoadPdf data= {props.location.propsState}/>}
+          document={<DocumentLoadPdf data={props.location.propsState} />}
           fileName="juntas-detalleprestamo.pdf"
           style={{
             textDecoration: "none",
             padding: "10px",
             backgroundColor: "#f7cd09",
-            borderRadius:"5px"
+            borderRadius: "5px"
           }}
         >
           {({ blob, url, loading, error }) =>
             loading ? "Cargando documento..." : "Descargar PDF"
           }
         </PDFDownloadLink>
-    </div>
+      </div>
       <button className="btn-pink">Finalizar</button>
     </div>
   );

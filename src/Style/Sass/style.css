@@ -3,8 +3,8 @@ header div {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 header img {
@@ -17,17 +17,13 @@ header img {
   font-size: 22px;
 }
 
-.td-li{
-  margin-bottom: 20px;
-  list-style:none;
-}
 .imagen {
   width: 200px;
 }
 
 .margintable {
   margin-left: 217px;
-  margin-top: 10px;
+  margin-top: 50px;
   width: 1026px;
 }
 
@@ -38,8 +34,8 @@ header img {
 .style {
   margin: 60px;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*-------------------------*\
@@ -83,6 +79,7 @@ $FONTS
   border-radius: 5px;
   background: white;
   margin: 7px;
+  margin-left: 90px;
 }
 
 .form-loan div .small-loan {
@@ -91,13 +88,13 @@ $FONTS
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20%;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 27%;
 }
 
 .form-loan div .small-loan small {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 form .select-loan {
@@ -123,10 +120,15 @@ form .select-loan select {
   font-size: 22px;
 }
 
-.font-title {
-  font-family: Metropolis;
-  font-size: 30px;
-  font-weight: bold;
+.font:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+.font-light {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: lighter;
 }
 
 .btn-pink {
@@ -138,10 +140,15 @@ form .select-loan select {
   margin-top: 4%;
   color: white;
   text-transform: uppercase;
-  font-family: Metropolis;
-  font-size: 22px;
   margin-top: 20px;
   margin-bottom: 20px;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.btn-pink:hover {
+  text-decoration: none;
+  color: #000000;
 }
 
 .btn-pink-link {
@@ -162,6 +169,11 @@ form .select-loan select {
   color: white;
 }
 
+.btn-pink-link:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
 .btn-yellow {
   width: 244px;
   height: 60px;
@@ -171,29 +183,6 @@ form .select-loan select {
   border: solid 0 #000000;
   text-align: center;
   color: #000000;
-}
-
-.btn-yellow-link {
-  width: 165px;
-  height: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  border-radius: 7px;
-  border: solid 0 #000000;
-  background-color: #ffd200;
-  color: #000000;
-  text-transform: uppercase;
-  padding: 15px;
-  margin-top: 10px;
-  font-family: Metropolis;
-  font-size: 20px;
-}
-.btn-yellow-link:hover {
-  text-decoration: none;
-  color: #000000;
-}
-.color-yellow {
-  background-color: #ffd200;
 }
 
 .input {
@@ -209,6 +198,7 @@ form .select-loan select {
   width: 1026px;
   height: 61px;
   background-color: #ffd200;
+  margin-top: 20px;
   margin-bottom: 50px;
   border: 10px solid white;
 }
@@ -217,27 +207,45 @@ form .select-loan select {
   font-weight: bold;
   background-color: #ffd200;
   font-family: Metropolis;
-  font-size: 20px;
+  font-size: 22px;
 }
-.mr-table {
-  margin: 1rem;
-  padding: 1rem;
-  /* IMPORTANTE */
-  text-align: center;
+
+.table-yellow:hover {
+  text-decoration: none;
+  color: #000000;
 }
+
+.btn-yellow-link {
+  width: 165px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: solid 0 #000000;
+  background-color: #ffd200;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 15px;
+  margin-top: 10px;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.btn-yellow-link:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
 .ml-1000 {
-  margin-left: 78%;
+  margin-left: 65%;
 }
 
 .mr-1000 {
   margin-right: 70%;
 }
+
 .mb-1000 {
   margin-bottom: 10%;
-}
-.btnColorTrash {
-  background-color: #ffd200;
-  border: none;
 }
 
 .h3ColorFuc {
@@ -255,6 +263,12 @@ form .select-loan select {
   margin-bottom: 20px;
 }
 
+.mr-table {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
 .aReq {
   width: 157px;
   height: 24px;
@@ -267,47 +281,11 @@ form .select-loan select {
   letter-spacing: normal;
   color: #2d2926;
 }
-/*# sourceMappingURL=style.css.map */
-.centerH4 {
-  margin-top: 15%;
-  text-align: center;
-  font-weight: bold;
-}
-/* .termYCon {
-  background-color: hotpink;;
-} */
-.termYCon {
-  width: 270px;
-  height: 60px;
-  border-radius: 10px;
-  border: solid 0 #000000;
-  background-color: white;
-  color: #f61067;
-  /* text-transform: lowercase; */
-  padding: 0px;
-  font-family: Metropolis;
-  font-size: 22px;
-}
-.termYCon1 {
-  width: 115px;
-  height: 20px;
-  border-radius: 10px;
-  border: solid 0 #000000;
-  background-color: white;
-  color: #f61067;
-  /* text-transform: lowercase; */
-  padding: 0px;
-  font-family: Metropolis;
-  font-size: 22px;
-}
-.chkW-H{
-  width: 50px;
-  height: 30px;
-  border-radius: 10px;
-  border: solid #f61067;
-}
-/*# sourceMappingURL=style.css.map */
 
+.td-li {
+  margin-bottom: 20px;
+  list-style: none;
+}
 
 .ml {
   margin-left: 25%;
@@ -318,3 +296,57 @@ form .select-loan select {
   color: white;
 }
 
+.color-white {
+  background: white;
+}
+
+.text-pink {
+  color: #c5165b;
+}
+
+.color-yellow {
+  background-color: #ffd200;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.error {
+  color: red;
+  margin-left: 50%;
+}
+
+.btnColorTrash {
+  background: transparent;
+  border: none;
+  margin-bottom: 2px;
+}
+
+.btn-plus {
+  padding-top: 11px;
+}
+
+.ml-10 {
+  margin-left: 72%;
+}
+
+.check {
+  width: 20px;
+  height: 40px;
+  background: white;
+  color: white;
+  border: 3px solid #c5165b;
+  margin-right: 7px;
+}
+
+.detail {
+  border-radius: 10px;
+  border: 3px solid #c5165b;
+  width: 60%;
+}
+/*# sourceMappingURL=style.css.map */

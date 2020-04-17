@@ -14,30 +14,30 @@ const BanksList = ({
     return (
         <div className="mr-table">
             <h3 className="h3ColorFuc">Elige tu mejor opción</h3>
-                <table className="table table-striped ">
-                    <thead>
-                        <tr className="table-yellow">
-                            <td>Banco/Entidad</td>
-                            <td>Cuota mensual</td>
-                            <td>N° de Cuotas</td>
-                            <td>TCEA</td>
-                            <td>Interés</td>
-                            <td>Monto Total</td>
-                            <td>Más informacion</td>
-                        </tr>
-                    </thead>
-                    <tbody>
+            <table className="table table-striped ">
+                <thead>
+                    <tr className="table-yellow">
+                        <td>Banco/Entidad</td>
+                        <td>Cuota mensual</td>
+                        <td>N° de Cuotas</td>
+                        <td>TCEA</td>
+                        <td>Interés</td>
+                        <td>Monto Total</td>
+                        <td>Más informacion</td>
+                    </tr>
+                </thead>
+                <tbody>
 
-                        {bank.map(element => (
-                            <BanksItems
-                                getsBanks={element}
-                                key={element.name}
-                                month={months}
-                                amountRequest={amountsRequest}
-                            />
-                        ))}
-                    </tbody>
-                </table>
+                    {bank.map(element => (
+                        <BanksItems
+                            getsBanks={element}
+                            key={element.name}
+                            month={months}
+                            amountRequest={amountsRequest}
+                        />
+                    ))}
+                </tbody>
+            </table>
         </div>
     );
 };
