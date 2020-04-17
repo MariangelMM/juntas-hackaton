@@ -14,10 +14,10 @@ const Header = () => {
                 </button>
                 <div className="collapse navbar-collapse flex-row-reverse " id="navbarNavAltMarkup">
                     <div className="navbar-nav font">
-                        <Link className="nav-item nav-link active m-3" to="/">Inicio <span className="sr-only">(current)</span></Link>
-                        <Link className="nav-item nav-link m-3 btn-yellow" to="/loan">Prestamos</Link>
-                        <Link className="nav-item nav-link m-3" to="/netword">Red de Emprendedoras</Link>
-                        <Link className="nav-item nav-link m-3" to="/improvecommerce">Mejora tu Negocio</Link>
+                        <Link className="nav-item nav-link active m-3 text-center" to="/">Inicio <span className="sr-only">(current)</span></Link>
+                        <Link className="nav-item nav-link m-3 btn-yellow text-center" to="/loan">Prestamos</Link>
+                        <Link className="nav-item nav-link m-3 text-center" to="/netword">Red de <br /> Emprendedoras</Link>
+                        <Link className="nav-item nav-link m-3 text-center" to="/improvecommerce">Mejora tu <br /> Negocio</Link>
                     </div>
                 </div>
             </nav>
