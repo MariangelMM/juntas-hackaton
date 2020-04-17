@@ -66,3 +66,11 @@
 .td-li{
  @include tdli;
 }
+.ml {
+  margin-left: 25%;
+}
+
+.hover {
+  text-decoration: none;
+  color: white;
+}

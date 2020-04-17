@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../Style/Sass/style.css";
 import { Link } from "react-router-dom";
+import Header from "./header";
 
 const GeneralInformation = () => {
   const [typeDocument, setTypeDocument] = useState("");
@@ -52,6 +53,7 @@ const GeneralInformation = () => {
 
   return (
     <div>
+      <Header />
       <div>
         <img
           className="img-fluid"
