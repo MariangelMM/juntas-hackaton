@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import Header from '../Components/header'
+import "../Style/Sass/style.css";
 
 const DetailDeposit = (props) => {
 
@@ -31,14 +33,22 @@ const DetailDeposit = (props) => {
 
     return (
         <div>
-            <h3>¡Ya estas por terminar!</h3>
-            <form action="">
-                <label htmlFor="">N° de Cuenta donde se realizara el deposito</label>
-                <input type="text" onChange={accountNumber} />
+            <Header />
+            <h4 className='centerH4'>¡Ya estás por terminar!</h4>
+            <br/><br/>
+            <form action="" className="form-loan">
+            <div className="form-group">
+                <label htmlFor="">N° de Cuenta donde se realizaría el depósito</label>
+                <input type="text"  placeholder="  Escribe aquí" className="input" onChange={accountNumber} />
                 <small>{msgError}</small>
-
-                <input type="checkbox" />
-                <label htmlFor="">He leido y acepto Terminos y Condiciones y las politicas de uso de datos personales de Juntas</label>
+                </div>
+                <table>
+                <tr>
+                    <td><input className="chkW-H" type="checkbox" /></td>
+                    <td><p>He leído y acepto <button className="termYCon">Términos y Condiciones</button>
+                     y las <button className="termYCon">políticas de uso de datos</button> <br /><button className="termYCon1">personales</button> de Juntas</p></td>
+                </tr>
+                </table>
 
                 <Link
                     to={{
