@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../Components/header';
 import GeneralInformation from '../Components/general-information';
 
+
 const Loan = () => {
     return (
         <div>
@@ -11,6 +12,7 @@ const Loan = () => {
 
             <div>
                 <GeneralInformation />
+               
             </div>
         </div>
     )
