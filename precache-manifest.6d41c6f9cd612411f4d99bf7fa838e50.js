@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d57d894c1de9285a4d82e648a4c28eb3",
+    "revision": "86fc5c8700d587151b842e69f234d34e",
     "url": "/juntas-hackaton/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/juntas-hackaton/static/css/2.89f067aa.chunk.css"
   },
   {
-    "revision": "a8b9727cc3d6522c6fc1",
-    "url": "/juntas-hackaton/static/css/main.0e151e3d.chunk.css"
+    "revision": "c27471af12f8c9b47a8a",
+    "url": "/juntas-hackaton/static/css/main.95890850.chunk.css"
   },
   {
     "revision": "dfdf230d9caae119b8e9",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/juntas-hackaton/static/js/2.21ac229a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a8b9727cc3d6522c6fc1",
-    "url": "/juntas-hackaton/static/js/main.a054c13f.chunk.js"
+    "revision": "c27471af12f8c9b47a8a",
+    "url": "/juntas-hackaton/static/js/main.913b9cfb.chunk.js"
   },
   {
     "revision": "f4d0ab811e6028e836f0",

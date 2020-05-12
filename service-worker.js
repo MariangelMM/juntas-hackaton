@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/juntas-hackaton/precache-manifest.47aa0de5523a5188326d62b1b9e8fe56.js"
+  "/juntas-hackaton/precache-manifest.6d41c6f9cd612411f4d99bf7fa838e50.js"
 );
 
 self.addEventListener('message', (event) => {
