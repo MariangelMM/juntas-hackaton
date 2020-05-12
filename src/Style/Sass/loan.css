@@ -1,0 +1,102 @@
+/*-------------------------*\
+$COLORS
+\*-------------------------*/
+/*-------------------------*\
+$FONTS
+\*-------------------------*/
+@font-face {
+  font-family: Metropolis;
+  src: url("../Font/Metropolis Font family/Metropolis-Medium.otf");
+}
+
+/*-------------------------*\
+        $SCREENS
+\*-------------------------*/
+/*-------------------------*\
+        MEDIA QUERYS
+\*-------------------------*/
+.form-loan {
+  margin-left: 15%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+.form-loan div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-loan div div input {
+  margin-left: 15px;
+  width: 338px;
+  height: 40px;
+  border-radius: 5px;
+  background: white;
+  margin: 7px;
+  margin-left: 90px;
+  font-family: Metropolis;
+  font-size: 22px;
+}
+
+.form-loan div div input:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (max-width: 767px) {
+  .form-loan div div input {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .form-loan div div input {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .form-loan div div input {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .form-loan div div input {
+    width: 100px;
+    height: 20px;
+    margin: 0px;
+    font-size: 12;
+    margin-left: 0px;
+  }
+}
+
+.form-loan div .small-loan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 27%;
+}
+
+.form-loan div .small-loan small {
+  font-size: 13px;
+}
+
+form .select-loan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20%;
+  background-color: green;
+}
+
+form .select-loan select {
+  background-color: firebrick;
+  color: hotpink;
+}
+/*# sourceMappingURL=loan.css.map */

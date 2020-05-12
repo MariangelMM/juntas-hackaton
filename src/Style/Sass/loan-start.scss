@@ -1,0 +1,19 @@
+
+.style-start {
+  margin: 60px;
+  justify-content: center;
+
+  @include media(xs) {
+    margin: 10px;
+
+  }
+}
+
+
+.acordeon {
+  margin: 5px;
+  @include media(xs) {
+    margin: 0 !important;
+
+  }
+}
