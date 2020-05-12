@@ -13,7 +13,7 @@ const Requirements = (props) => {
 
     const propsState = props.location.state;
 
-    const [state, setState] = useState();
+    const [setState] = useState();
     const [stateFileDoc, setStateFileDoc] = useState('');
     const [stateFileRe, setStateFileRe] = useState('');
 
